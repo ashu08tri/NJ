@@ -1,0 +1,16 @@
+.progress-ring {
+    stroke-dasharray: 113.1; /* 2 * Math.PI * radius (approximated for r = 18) */
+    stroke-dashoffset: 0;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        stroke-dashoffset: 113.1; /* Start with full circumference */
+        
+    }
+    100% {
+        stroke-dashoffset: -113.1; /* End with no offset (full circle drawn) */
+        
+    }
+}

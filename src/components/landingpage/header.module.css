@@ -82,11 +82,12 @@
   
   @keyframes animateLine {
     0% {
-      transform: translateY(0); /* Starting at the top */
+      transform:translate3d(0px, 60px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)
+      /* Starting at the top */
       
     }
     100% {
-      transform: translateY(230%); /* Go all the way down to the bottom */
+      transform:translate3d(0px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) /* Go all the way down to the bottom */
       
     }
   }

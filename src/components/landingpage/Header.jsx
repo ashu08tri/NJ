@@ -2,9 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './header.module.css';
 import { FaArrowDown } from "react-icons/fa6";
-import { FaArrowTrendUp } from "react-icons/fa6";
-
-
 
 function Header() {
   return (
@@ -76,7 +73,7 @@ function Header() {
               <img className='w-5 h-5' src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/652920041eb6f19c1c6b890a_chart-data-fill0-wght400-grad0-opsz24.svg" alt="process" loading='lazy'/>
             </div>
 
-            <div className='h-16 md:h-20 w-[1.5px] bg-headerTextOpa'>
+            <div className='h-16 md:h-20 w-[1.5px] bg-headerTextOpa md:overflow-hidden'>
               <div className={`${styles.lineAnimate} h-5 md:h-6 w-[1.5px] bg-headerText`}></div>
             </div>
 
