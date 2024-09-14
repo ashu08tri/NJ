@@ -1,0 +1,52 @@
+/* Top border animation */
+@keyframes animateTop {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Bottom border animation */
+  @keyframes animateBottom {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Styling for top border */
+  .borderTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(219, 166, 167, 0), rgb(236, 160, 152) 50%, rgba(219, 166, 167, 0));
+    animation: animateTop 2s ease-in-out infinite alternate;
+  }
+  
+  /* Styling for bottom border */
+  .borderBottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(219, 166, 167, 0), rgb(236, 160, 152) 50%, rgba(219, 166, 167, 0));
+    animation: animateBottom 2s ease-in-out infinite alternate;
+  }
+  
+  .animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* To ensure the borders are behind the content */
+    overflow: hidden; /* Keep the borders inside the container */
+  }
+  
