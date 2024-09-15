@@ -1,5 +1,5 @@
 import React from 'react';
-import './circle.css'
+import styles from './second.module.css'
 import { FaArrowDown } from "react-icons/fa6";
 
 function SecondSection() {
@@ -32,7 +32,7 @@ function SecondSection() {
                                 viewBox="0 0 40 40"
                             >
                                 <circle
-                                    className='progress-ring'
+                                    className={styles.progressRing}
                                     cx="20"
                                     cy="20"
                                     r="18"
