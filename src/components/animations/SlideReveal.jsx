@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-function SlideReveal({ children }) {
+function SlideReveal() {
   // Ref to track the component's visibility
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // Trigger animation only once when in view
@@ -12,7 +12,7 @@ function SlideReveal({ children }) {
       initial={{ x: 0 }} 
       animate={{ x: isInView ? ['-100%', '0%', '100%'] : '-100%' }} 
       transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} 
-      className='w-full h-full absolute top-0 left-0 bg-brown15Text'
+      className='w-full h-full absolute top-0 left-0 bg-[#4c2e2b]'
     />
   );
 }
