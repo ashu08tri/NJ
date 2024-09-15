@@ -10,12 +10,10 @@ function SlideReveal({ children }) {
     <motion.div
       ref={ref} // Attach the ref to the div
       initial={{ x: 0 }} 
-      animate={{ x: isInView ? '100%' : '0%' }} // Trigger animation when in view
+      animate={{ x: isInView ? ['-100%', '0%', '100%'] : '-100%' }} 
       transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} 
       className='w-full h-full absolute top-0 left-0 bg-brown15Text'
-    >
-      {children}
-    </motion.div>
+    />
   );
 }
 
