@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         'headerText': 'rgb(236, 160, 152)',
-        'headerTextOpacity': 'rgba(236, 160, 152, 0.6)',
+        'headerTextOpacity': 'rgba(236, 160, 152, 0.9)',
         'headerTextOpa': 'rgba(236, 160, 152, 0.4)',
         'navHover': 'rgba(38, 33, 64, .7)',
         'navBorder': 'rgba(230, 148, 140, .5)',
