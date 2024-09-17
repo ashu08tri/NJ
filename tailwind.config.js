@@ -15,6 +15,7 @@ export default {
         'brown9': 'rgb(204, 123, 114)',
         'brown9Fade': 'rgba(204, 123, 114, 0.1)',
         'brown9Hover': 'rgba(204, 123, 114, 0.2)',
+        'brown9HoverBox': 'rgba(204, 123, 114, 0.5)',
         'second':'rgb(228, 206, 204)',
         'secondText': 'rgb(54, 47, 90)',
         'brown7': '#dbbebb',
