@@ -71,7 +71,7 @@ function SixthSection() {
                         animate={{ x: 0, transition: { delay: 0.6 } }}
                         whileHover="textHover"
                         className='absolute inset-0 h-full flex flex-col gap-6'>
-                        <div className='flex justify-evenly pt-6'>
+                        <div className='flex justify-evenly pt-10 md:pt-6'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-xs uppercase'>Emily Thompson</motion.p>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
@@ -94,7 +94,7 @@ function SixthSection() {
                         animate={{ x: 0, transition: { delay: 0.6 } }}
                         whileHover="textHover"
                         className='absolute inset-0 h-full flex flex-col gap-6'>
-                        <div className='flex justify-evenly pt-6'>
+                        <div className='flex justify-evenly pt-12 md:pt-6'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-xs uppercase'>Evergreen co.</motion.p>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}

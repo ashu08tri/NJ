@@ -17,13 +17,21 @@ function HoverText({ text }) {
             {/* Initial static text */}
             <motion.p
                 variants={{
-                    hover: { x: 100, opacity: 0 }, // Hide the static text on hover
+                    hover: {
+                        x: ['0%', '100%', '-100%', '0%'], // Move to the right, then jump to the left off-screen, and come back
+                        opacity: [1, 0, 0, 1], // Fade out when moving to the right, stay invisible, then fade back in
+                    },
                 }}
-                initial={{ opacity: 1 }}
-                transition={{ duration: 1, ease: [0.2, 1, 0.2, 1] }} // Smooth transition for static text
-                className="flex justify-between px-4 items-center"
+                initial={{ x: 0, opacity: 1 }} // Start at original position, fully visible
+                transition={{
+                    duration: 2, // Total duration for the animation sequence
+                    ease: [0.2, 1, 0.2, 1], // Smooth easing
+                    times: [0, 0, 0, 1], // Adjust timing for each step in the animation
+                }}
+                className="flex justify-between px-4 items-center absolute top-0 left-0 content-center h-full w-full z-50"
             >
-                <span>{text}</span> <span><FaArrowRight /></span>
+                <span>{text}</span>
+                <span><FaArrowRight /></span>
             </motion.p>
 
             {/* Slide reveal animation for the div */}
@@ -34,22 +42,9 @@ function HoverText({ text }) {
                 }}
                 initial={{ x: '-100%' }} // Initially hidden (off-screen)
                 transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} // Smooth transition for the div
-                className="w-full h-full absolute top-0 left-0 content-center"
+                className="w-full h-full absolute top-0 left-0 content-center z-40"
                 style={{ backgroundColor: '#4c2e2b' }}
             >
-                {/* Slide reveal animation for the p tag after the div is in place */}
-                <motion.p
-                    variants={{
-                        hover: { x: '0%' },
-                        hoverEnd: { opacity: 0 } // Immediately hide on hover end
-                    }}
-                    initial={{ x: '-100%' }} // Initially hidden (off-screen)
-                    animate="hover" // Slide in on hover
-                    transition={{ delay: 0.4, duration: 1, ease: [0.2, 1, 0.2, 1] }} // Delay text slide until div is fully in place
-                    className="flex justify-between px-4 items-center"
-                >
-                    <span>{text}</span> <span><FaArrowRight /></span>
-                </motion.p>
             </motion.div>
         </motion.div>
 
