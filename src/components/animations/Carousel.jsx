@@ -42,7 +42,7 @@ const Carousel = ({ images }) => {
         {/* Render the previous image */}
         <motion.div
           key={currentIndex}
-          className="absolute top-0 left-0 h-full bg-cover bg-center"
+          className="absolute top-0 left-0 h-full bg-cover bg-center bg-fixed"
           style={{ backgroundImage: `url(${images[currentIndex]})` }}
           initial="enter"
           animate="center"
@@ -57,7 +57,7 @@ const Carousel = ({ images }) => {
         {/* Render the next image */}
         <motion.div
           key={nextIndex}
-          className="absolute top-0 left-0 h-full bg-cover bg-center"
+          className="absolute top-0 left-0 h-full bg-cover bg-center bg-fixed"
           style={{ backgroundImage: `url(${images[nextIndex]})` }}
           initial="enter"
           animate="center"

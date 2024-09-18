@@ -14,9 +14,9 @@ function SixthSection() {
                 <p className='text-7xl'>Proven Results</p>
             </div>
 
-            <div className='h-[200vh] md:h-[100vh] flex flex-col md:flex-row gap-10'>
+            <div className='h-[200vh] md:h-[80vh] flex flex-col md:flex-row gap-10'>
 
-                <div className='relative w-full h-[150%] md:h-[75%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6cff673e6595d2f866a_the-blowup-hK-jdvutWoU-unsplash.jpg"}
                         alt={"fifthSection_img1"} scrollNum={52} />
                     <SlideReveal bgColor={'#54498c'} />
@@ -39,7 +39,7 @@ function SixthSection() {
                     </motion.div >
                 </div>
 
-                <div className='relative w-full h-[150%] md:h-[75%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6f479391f5e688d7586_katherine-carlyon-MV43AzaFalM-unsplash.jpg"}
                         alt={"fifthSection_img2"} scrollNum={52} />
                     <SlideReveal bgColor={'#54498c'} />
@@ -62,7 +62,7 @@ function SixthSection() {
                     </motion.div >
                 </div>
 
-                <div className='relative w-full h-[150%] md:h-[75%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f43eed1ec5d4fc871a5_drahomir-hugo-posteby-mach-9Zb6mnHBH7E-unsplash.jpg"}
                         alt={"fifthSection_img3"} scrollNum={52} />
                     <SlideReveal bgColor={'#54498c'} />
@@ -85,7 +85,7 @@ function SixthSection() {
                     </motion.div >
                 </div>
 
-                <div className='relative w-full h-[150%] md:h-[75%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515d3da912adf16a861c6df_cai-fang-MbxYb4a4AL0-unsplash.jpg"}
                         alt={"fifthSection_img4"} scrollNum={52} />
                     <SlideReveal bgColor={'#54498c'} />
