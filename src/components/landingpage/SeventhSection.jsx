@@ -24,7 +24,7 @@ const data = [
     },
     {
         sNo: 4,
-        title: 'Tax Optomization',
+        title: 'Tax Optimization',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65119222f421c66b366f44bb_pexels-tima-miroshnichenko-5717271-p-1080.jpg',
         desc: 'Save more with strategic tax planning and complete compliance.'
     },
@@ -49,9 +49,9 @@ function SeventhSection() {
         <div className='bg-[#e4cecc] py-10'>
             <div>
                 {/* Top text */}
-                <div className='pl-16 py-10 text-[#352d5e]'>
+                <div className='pl-10 md:pl-16 py-10 text-[#352d5e]'>
                     <p>Choose From</p>
-                    <p className='text-5xl font-medium py-5'>Adaptive Financial Solutions</p>
+                    <p className='text-6xl font-medium py-5'>Adaptive Financial Solutions</p>
                 </div>
                 {/* List Items */}
                 <div>
@@ -91,7 +91,7 @@ function SeventhSection() {
                                 </motion.li>
                             </li>
 
-                            <li className='flex items-center justify-between pr-8 w-3/4'>
+                            <li className='flex items-center justify-between pr-16 w-3/4'>
                                 <motion.li
                                     initial={{ x: 0 }}
                                     variants={{
@@ -123,21 +123,44 @@ function SeventhSection() {
                                     />
                                 </motion.li>
 
-                                <motion.li className='hidden'>
+                                <motion.li 
+                                initial={{opacity: 0, x: "-20%"}}
+                                variants={{
+                                    hover: {opacity: 1, x: 0, transition: {duration: 2, delay: 0.45, ease: [0.2, 1, 0.2, 1]}}
+                                }}
+                                className='text-[#352d5e] px-16'>
                                     {item.desc}
                                 </motion.li>
 
-                                <motion.li className='w-72 hidden'>
-                                    <HoverText text={'Solutions'} />
+                                <motion.li
+                                 initial={{opacity: 0, x: "-20%"}}
+                                 variants={{
+                                     hover: {opacity: 1, x: 0, transition: {duration: 2, delay: 0.45, ease: [0.2, 1, 0.2, 1]}}
+                                 }}
+                                className='w-72 text-brown15Text'>
+                                    <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'}/>
                                 </motion.li>
 
-                                <motion.li className='mr-6'>
+                                <motion.li
+                                initial={{scale: 1, x: 0}}
+                                variants={{
+                                    hover: {scale: 0, x: 30, transition: {duration: 2, delay: 0.25, ease: [0.2, 1, 0.2, 1]}}
+                                }}
+                                >
                                     <FaArrowRight size={25} className='text-brown15Text' />
                                 </motion.li>
                             </li>
                         </motion.ul>
                     ))}
+
+                    
                 </div>
+            </div>
+            <div className='h-80 flex flex-col gap-12 justify-center items-center'>
+                <p className='text-5xl font-medium text-[#352d5e]'>Need Financial Growth?</p>
+                <a href='/' className='w-80 text-brown15Text'>
+                    <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'}/>
+                </a>
             </div>
         </div>
     );

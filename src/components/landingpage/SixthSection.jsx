@@ -11,7 +11,7 @@ function SixthSection() {
 
             <div className='mt-28 mb-12'>
                 <p className='uppercase'>Case studies</p>
-                <p className='text-7xl'>Proven Results</p>
+                <p className='text-6xl md:text-7xl'>Proven Results</p>
             </div>
 
             <div className='h-[200vh] md:h-[80vh] flex flex-col md:flex-row gap-10'>
@@ -34,7 +34,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Smart Investments</motion.p>
-                            <HoverText text={'Smart Investments'} />
+                            <HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
                         </div>
                     </motion.div >
                 </div>
@@ -57,7 +57,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Tax Triumph</motion.p>
-                            <HoverText text={'Tax Triumph'} />
+                            <HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
                         </div>
                     </motion.div >
                 </div>
@@ -80,7 +80,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Wealth Boost</motion.p>
-                            <HoverText text={'Wealth Boost'} />
+                            <HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
                         </div>
                     </motion.div >
                 </div>
@@ -103,7 +103,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Green Growth</motion.p>
-                            <HoverText text={'Green Growth'} />
+                            <HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
                         </div>
                     </motion.div >
                 </div>

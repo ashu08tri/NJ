@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import styles from '../landingpage/header.module.css';
 import { FaArrowRight } from "react-icons/fa6";
 
-function HoverText({ text }) {
+function HoverText({ text, mainBG, overlayBG, borderColor }) {
     return (
         <motion.div
-            className="relative w-11/12 h-14 bg-brown9HoverBox border border-navBorder content-center overflow-hidden"
+            className="relative w-11/12 h-14 border content-center overflow-hidden"
+            style={{backgroundColor: mainBG, borderColor: borderColor}}
             whileHover="hover" // Trigger animation on hover
         >
             <div className={`${styles.animation} absolute inset-0`}>
@@ -43,7 +44,7 @@ function HoverText({ text }) {
                 initial={{ x: '-100%' }} // Initially hidden (off-screen)
                 transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} // Smooth transition for the div
                 className="w-full h-full absolute top-0 left-0 content-center z-40"
-                style={{ backgroundColor: '#4c2e2b' }}
+                style={{ backgroundColor: overlayBG }}
             >
             </motion.div>
         </motion.div>
