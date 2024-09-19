@@ -1,5 +1,4 @@
 import SlideReveal from '../animations/SlideReveal';
-import ParallaxImage from '../animations/ParallaxImage';
 import HoverText from '../animations/HoverText';
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -21,14 +20,12 @@ function NinthSection() {
         {/* 2nd content*/}
         <div className='w-full md:flex justify-between mt-2 md:mt-8'>
 
-        <div className='relative overflow-hidden w-full md:w-5/12 h-96 py-3 md:h-[90vh]'>
-        <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515771f169082b87ed293ff_pexels-gustavo-fring-5163388.webp"} alt={'ninthSection_img'}
-          scrollNum={82} delay={1} height={'100%'}
-        />
+        <div className='relative overflow-hidden w-full md:w-4/12 h-80 py-3 md:h-[80vh]'>
+        <img src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515771f169082b87ed293ff_pexels-gustavo-fring-5163388.webp" alt="ninthSection_Img" className='h-full w-full object-cover'/>
         <SlideReveal bgColor={'#4c2e2b'} />
         </div>
         
-        <div className='md:w-6/12 h-auto mt-10 md:m-0'>
+        <div className='md:w-7/12 h-auto mt-10 md:m-0'>
           <ul className='border-y-2 w-full border-brown15Text py-10'>
 
             <li className='flex justify-between gap-10 pb-7 border-b border-brown15Text items-center hover:pb-10 transition-all duration-100 ease-linear'>

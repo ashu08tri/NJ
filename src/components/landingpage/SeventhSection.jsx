@@ -34,6 +34,9 @@ function SeventhSection() {
     const [textWidths, setTextWidths] = useState([]);
     const [screenSize, setScreenSize] = useState('large');
 
+    const [expanded, setExpanded] = useState(null);
+
+
     // Function to update the screen size
     const updateScreenSize = () => {
         if (window.matchMedia('(max-width: 640px)').matches) {
@@ -42,6 +45,12 @@ function SeventhSection() {
             setScreenSize('medium');
         } else {
             setScreenSize('large');
+        }
+    };
+
+    const handleClick = (index) => {
+        if (screenSize === 'small') {
+            setExpanded(expanded === index ? null : index); // Toggle the expanded state for the clicked item
         }
     };
 
@@ -70,8 +79,8 @@ function SeventhSection() {
                 screenSize === 'small'
                     ? '200px'
                     : screenSize === 'medium'
-                    ? '160px'
-                    : '160px',
+                        ? '160px'
+                        : '160px',
             transition: { duration: 0.5 },
         },
         hover: {
@@ -79,8 +88,8 @@ function SeventhSection() {
                 screenSize === 'small'
                     ? 'auto'
                     : screenSize === 'medium'
-                    ? '200px'
-                    : '200px',
+                        ? '200px'
+                        : '200px',
             transition: { duration: 0.5 },
         },
     };
@@ -100,10 +109,10 @@ function SeventhSection() {
                         <motion.ul
                             key={i}
                             className='px-8 md:p-0 relative md:flex gap-5 w-full border-t border-brown15Text transition-transform overflow-hidden last:border-b'
-                            whileHover="hover"
-                            whileTap="hover"
-                            initial="initial"
-                            variants={heightVariants} // Apply responsive variants
+                            onClick={() => handleClick(i)} // Apply click handler
+                            variants={heightVariants} // Apply height variants
+                            whileHover='hover'
+                            animate={expanded === i ? "hover" : "initial"} // Apply responsive variants
                         >
                             <li className='w-full md:w-1/4'>
                                 <motion.li>
@@ -115,8 +124,8 @@ function SeventhSection() {
                                                     screenSize === 'small'
                                                         ? '100%'
                                                         : screenSize === 'medium'
-                                                        ? 0
-                                                        : 0,
+                                                            ? 0
+                                                            : 0,
                                             },
                                             hover: {
                                                 height: '200px',
@@ -124,9 +133,9 @@ function SeventhSection() {
                                                     screenSize === 'small'
                                                         ? '100%'
                                                         : screenSize === 'medium'
-                                                        ? '80%'
-                                                        : '80%',
-                                                        transition: { duration: 2, delay: 0.4, ease: [0.2, 1, 0.2, 1] }
+                                                            ? '80%'
+                                                            : '80%',
+                                                transition: { duration: 2, delay: 0.4, ease: [0.2, 1, 0.2, 1] }
                                             },
                                         }}
                                         src={item.img}
@@ -201,7 +210,7 @@ function SeventhSection() {
                                 </motion.li>
 
                                 <motion.li
-                                className='hidden md:block'
+                                    className='hidden md:block'
                                     initial={{ scale: 1, x: 0 }}
                                     variants={{
                                         hover: {
@@ -219,7 +228,7 @@ function SeventhSection() {
                 </div>
                 {/* for smaller screen */}
             </div>
-            <div className='h-64 flex flex-col gap-12 justify-center items-center mt-20'>
+            <div className='h-72 flex flex-col gap-12 justify-center items-center mt-20'>
                 <p className='text-5xl font-medium text-[#352d5e] text-center'>Need Financial Growth?</p>
                 <a href='/' className='w-80 text-brown15Text'>
                     <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} />
