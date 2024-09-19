@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css';
 
@@ -26,16 +27,46 @@ function Navbar() {
             </p>
           </div>
         </div>
-       
+
       </div>
 
       <div className='w-full content-center'>
-      <ul className='hidden md:flex justify-between items-center w-3/4'>
-          <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to='/solutions'>Solutions</NavLink></li>
-          <li><NavLink to='/services'>Services</NavLink></li>
-          <li><NavLink to='/about'>About</NavLink></li>
-          <li><NavLink to='/company'>Company</NavLink></li>
+        <ul className='hidden md:flex justify-between items-center w-3/4'>
+          <li className='py-10'><NavLink to='/'>Home</NavLink></li>
+          <li className='py-10'><NavLink to='/solutions'>Solutions</NavLink></li>
+          <li className='py-10'><NavLink to='/services'>Services</NavLink></li>
+          <li className='py-10'><NavLink to='/about'>About</NavLink></li>
+          <motion.li whileHover='hover' className='relative group py-10'>
+            <NavLink to='/company' className='hover:text-highlight transition'>Company</NavLink>
+
+            {/* Dropdown menu */}
+            <motion.ul
+              initial={{ opacity: 0, y: 20, pointerEvents: 'none' }}
+              variants={{ hover: { opacity: 1, y: 0, pointerEvents: 'auto' } }}
+              transition={{ duration: 0.2, ease: 'easeIn' }}
+              className='absolute flex -left-64 top-full items-center w-[40vw] shadow-lg border border-[#6b5db3] z-10'
+            >
+              <ul className='bg-[#362f5a] w-1/2 h-full p-4'>
+                <li className='flex flex-col gap-4'>
+                  <li className='text-xs uppercase'>Expertise</li>
+                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage1'>Home</NavLink></li>
+                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage2'>Service</NavLink></li>
+                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage3'>Solutions</NavLink></li>
+                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage4'>About</NavLink></li>
+                </li>
+              </ul>
+
+              <ul className='bg-[#262140] w-1/2 h-full p-4'>
+                <li className='flex flex-col gap-4'>
+                <li className='text-xs uppercase'>Company</li>
+                <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage1'>Template1</NavLink></li>
+                <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage2'>Template1</NavLink></li>
+                <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage3'>Template1</NavLink></li>
+                <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage4'>Template1</NavLink></li>
+                </li>
+              </ul>
+            </motion.ul>
+          </motion.li>
         </ul>
       </div>
 
