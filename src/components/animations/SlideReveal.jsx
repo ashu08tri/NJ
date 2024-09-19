@@ -12,7 +12,7 @@ function SlideReveal({bgColor}) {
       initial={{ x: 0 }} 
       animate={{ x: isInView ? ['-100%', '0%', '100%'] : '-100%' }} 
       transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} 
-      className='w-full h-full absolute top-0 left-0 z-50'
+      className='w-full h-full absolute top-0 left-0 z-40'
       style={{backgroundColor: bgColor}}
     />
   );

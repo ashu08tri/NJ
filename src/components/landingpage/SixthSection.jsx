@@ -18,11 +18,11 @@ function SixthSection() {
 
                 <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6cff673e6595d2f866a_the-blowup-hK-jdvutWoU-unsplash.jpg"}
-                        alt={"fifthSection_img1"} scrollNum={52} />
+                        alt={"fifthSection_img1"} scrollNum={52} delay={1} height={'120%'}/>
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
                         initial={{ x: '-100%' }}
-                        animate={{ x: 0, transition: { delay: 0.6 } }}
+                        animate={{ x: 0, transition: { duration:1, delay: 1.2, type: 'spring' } }}
                         whileHover="textHover"
                         className='absolute inset-0 h-full flex flex-col gap-6'>
                         <div className='flex justify-evenly pt-6'>
@@ -41,11 +41,11 @@ function SixthSection() {
 
                 <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6f479391f5e688d7586_katherine-carlyon-MV43AzaFalM-unsplash.jpg"}
-                        alt={"fifthSection_img2"} scrollNum={52} />
+                        alt={"fifthSection_img2"} scrollNum={52} delay={1} height={'120%'}/>
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
                         initial={{ x: '-100%' }}
-                        animate={{ x: 0, transition: { delay: 0.6 } }}
+                        animate={{ x: 0, transition: { duration:1, delay: 1.2, type: 'spring' } }}
                         whileHover="textHover"
                         className='absolute inset-0 h-full flex flex-col gap-6'>
                         <div className='flex justify-evenly pt-6'>
@@ -64,11 +64,11 @@ function SixthSection() {
 
                 <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f43eed1ec5d4fc871a5_drahomir-hugo-posteby-mach-9Zb6mnHBH7E-unsplash.jpg"}
-                        alt={"fifthSection_img3"} scrollNum={52} />
+                        alt={"fifthSection_img3"} scrollNum={52} delay={1} height={'120%'}/>
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
                         initial={{ x: '-100%' }}
-                        animate={{ x: 0, transition: { delay: 0.6 } }}
+                        animate={{ x: 0, transition: { duration:1, delay: 1.2, type: 'spring' } }}
                         whileHover="textHover"
                         className='absolute inset-0 h-full flex flex-col gap-6'>
                         <div className='flex justify-evenly pt-10 md:pt-6'>
@@ -87,11 +87,11 @@ function SixthSection() {
 
                 <div className='relative w-full h-[150%] md:h-[95%] md:w-1/4 overflow-hidden hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515d3da912adf16a861c6df_cai-fang-MbxYb4a4AL0-unsplash.jpg"}
-                        alt={"fifthSection_img4"} scrollNum={52} />
+                        alt={"fifthSection_img4"} scrollNum={52} delay={1} height={'120%'}/>
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
                         initial={{ x: '-100%' }}
-                        animate={{ x: 0, transition: { delay: 0.6 } }}
+                        animate={{ x: 0, transition: { duration:1, delay: 1.2, type: 'spring' } }}
                         whileHover="textHover"
                         className='absolute inset-0 h-full flex flex-col gap-6'>
                         <div className='flex justify-evenly pt-12 md:pt-6'>
@@ -103,7 +103,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Green Growth</motion.p>
-                            <HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
+                            <HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
                         </div>
                     </motion.div >
                 </div>

@@ -19,7 +19,8 @@ export default {
         'second':'rgb(228, 206, 204)',
         'secondText': 'rgb(54, 47, 90)',
         'brown7': '#dbbebb',
-        'brown15Text': 'rgb(153, 92, 86)'
+        'brown15Text': 'rgb(153, 92, 86)',
+        'purpleBlur': 'rgba(38, 33, 64, .5)'
       }
     },
   },

@@ -6,6 +6,10 @@ import FourthSection from '../components/landingpage/FourthSection';
 import FifthSection from '../components/landingpage/FifthSection';
 import SixthSection from '../components/landingpage/SixthSection';
 import SeventhSection from '../components/landingpage/SeventhSection';
+import EighthSection from '../components/landingpage/EighthSection';
+import NinthSection from '../components/landingpage/NinthSection';
+import TenthSection from '../components/landingpage/TenthSection';
+import EleventhSection from '../components/landingpage/EleventhSection';
 
 function Home() {
   return (
@@ -17,6 +21,10 @@ function Home() {
     <FifthSection />
     <SixthSection />
     <SeventhSection />
+    <EighthSection />
+    <NinthSection />
+    <TenthSection />
+    <EleventhSection />
     </>
   )
 }

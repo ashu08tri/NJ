@@ -101,6 +101,7 @@ function SeventhSection() {
                             key={i}
                             className='px-8 md:p-0 relative md:flex gap-5 w-full border-t border-brown15Text transition-transform overflow-hidden last:border-b'
                             whileHover="hover"
+                            whileTap="hover"
                             initial="initial"
                             variants={heightVariants} // Apply responsive variants
                         >
@@ -218,7 +219,7 @@ function SeventhSection() {
                 </div>
                 {/* for smaller screen */}
             </div>
-            <div className='h-80 flex flex-col gap-12 justify-center items-center'>
+            <div className='h-64 flex flex-col gap-12 justify-center items-center mt-20'>
                 <p className='text-5xl font-medium text-[#352d5e] text-center'>Need Financial Growth?</p>
                 <a href='/' className='w-80 text-brown15Text'>
                     <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} />

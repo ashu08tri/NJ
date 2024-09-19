@@ -41,7 +41,7 @@ function Navbar() {
 
       <div className='w-1/2 md:w-5/12 flex justify-center items-center h-full'>
         <ul className='flex justify-end gap-6 items-center w-full md:pr-8'>
-          <li><NavLink to='/consultation' className='text-sm md:text-base'>Consultation</NavLink></li>
+          <li><NavLink to='/consultation' className='hidden md:inline text-sm md:text-base'>Consultation</NavLink></li>
           <li>search</li>
           <li>menu</li>
         </ul>
