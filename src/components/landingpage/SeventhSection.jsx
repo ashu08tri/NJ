@@ -122,7 +122,7 @@ function SeventhSection() {
                                                 height: '200px',
                                                 width:
                                                     screenSize === 'small'
-                                                        ? '100%'
+                                                        ? '0'
                                                         : screenSize === 'medium'
                                                             ? 0
                                                             : 0,
