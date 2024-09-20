@@ -7,7 +7,7 @@ import HoverText from '../animations/HoverText';
 function SixthSection() {
 
     return (
-        <div className='bg-[#352d5e] p-12 flex flex-col justify-center gap-10 text-[#f8b3ac] '>
+        <div className='bg-[#352d5e] p-12 flex flex-col justify-center gap-10 text-[#f8b3ac]'>
 
             <div className='mt-28 mb-12'>
                 <p className='uppercase'>Case studies</p>
