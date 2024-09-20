@@ -49,4 +49,19 @@
     z-index: -1; /* To ensure the borders are behind the content */
     overflow: hidden; /* Keep the borders inside the container */
   }
+
+  .list{
+    color: rgba(236, 160, 152, 0.7);
+  }
+
+  .list a:hover{
+    color: rgb(236, 160, 152);
+  }
+  .list a.active{
+    color: rgb(236, 160, 152);
+    text-decoration: underline;
+    text-underline-offset: 22px;
+  }
+
+
   

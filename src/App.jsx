@@ -8,7 +8,7 @@ import Home from "./page/Home";
 function App() {
   const location = useLocation();
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Navbar/>
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>

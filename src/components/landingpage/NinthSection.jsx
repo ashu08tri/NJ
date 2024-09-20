@@ -21,7 +21,7 @@ function NinthSection() {
         <div className='w-full md:flex justify-between mt-2 md:mt-8'>
 
         <div className='relative overflow-hidden w-full md:w-4/12 h-80 py-3 md:h-[80vh]'>
-        <img src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515771f169082b87ed293ff_pexels-gustavo-fring-5163388.webp" alt="ninthSection_Img" className='h-full w-full object-cover'/>
+        <img loading='lazy' src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515771f169082b87ed293ff_pexels-gustavo-fring-5163388.webp" alt="ninthSection_Img" className='h-full w-full object-cover'/>
         <SlideReveal bgColor={'#4c2e2b'} />
         </div>
         
