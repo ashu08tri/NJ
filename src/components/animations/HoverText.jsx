@@ -39,14 +39,13 @@ function HoverText({ text, mainBG, overlayBG, borderColor }) {
             <motion.div
                 variants={{
                     hover: { x: '0%' }, // Slide in on hover
-                    hoverEnd: { x: '-100%' } // Slide out on hover end
                 }}
                 initial={{ x: '-100%' }} // Initially hidden (off-screen)
                 transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} // Smooth transition for the div
                 className="w-full h-full absolute top-0 left-0 content-center z-40"
                 style={{ backgroundColor: overlayBG }}
-            >
-            </motion.div>
+            />
+           
         </motion.div>
 
     )
