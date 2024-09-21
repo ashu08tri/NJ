@@ -30,7 +30,7 @@ const data = [
     },
 ];
 
-function SeventhSection() {
+function SecondSection() {
     const [textWidths, setTextWidths] = useState([]);
     const [screenSize, setScreenSize] = useState('large');
 
@@ -96,7 +96,7 @@ function SeventhSection() {
 
 
     return (
-        <div className='bg-[#e4cecc] py-10'>
+        <div className='bg-[#e4cecc] pt-10'>
             <div>
                 {/* Top text */}
                 <div className='pl-10 md:pl-16 py-10 text-[#352d5e]'>
@@ -228,14 +228,8 @@ function SeventhSection() {
                 </div>
                 {/* for smaller screen */}
             </div>
-            <div className='h-72 flex flex-col gap-12 justify-center items-center mt-20'>
-                <p className='text-5xl font-medium text-[#352d5e] text-center'>Need Financial Growth?</p>
-                <a href='/' className='w-80 text-brown15Text'>
-                    <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} />
-                </a>
-            </div>
         </div>
     );
 }
 
-export default SeventhSection;
+export default SecondSection;

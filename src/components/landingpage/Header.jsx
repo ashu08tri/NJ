@@ -5,7 +5,7 @@ import { FaArrowDown } from "react-icons/fa6";
 
 function Header() {
   return (
-    <div className='h-screen md:h-[110vh] relative'>
+    <div className='h-screen md:h-[110vh] relative overflow-y-hidden'>
       {/* Image as background */}
       <img
         src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6516e3fae8b274b4838678cb_bda21aa-c30-c764-e1f2-f65b041c420-poster-00001.jpg"
@@ -21,7 +21,7 @@ function Header() {
       <div className='absolute top-56 flex px-8 md:px-16 gap-10'>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0, transition: { delay: 0.5, duration: 0.8, ease: "easeInOut" } }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.5, duration: 0.7, ease: "easeInOut" } }}
           className='flex relative'
         >
           <div className='absolute h-10 md:h-16 w-[1.5px] bg-headerText'></div>
@@ -30,7 +30,7 @@ function Header() {
 
         <motion.div
           initial={{ opacity: 0, y: 150 }}
-          animate={{ opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.8, ease: "easeInOut" } }}
+          animate={{ opacity: 1, y: 0, transition: { delay: 0.6, duration: 0.7, ease: "easeInOut" } }}
           className='flex flex-col gap-4'
         >
           <p className='text-3xl md:text-6xl tracking-wider text-headerText'>Dream Big, Save Bigger:</p>

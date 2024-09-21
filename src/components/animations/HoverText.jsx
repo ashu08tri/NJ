@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styles from '../landingpage/header.module.css';
 import { FaArrowRight } from "react-icons/fa6";
 
-function HoverText({ text, mainBG, overlayBG, borderColor }) {
+function HoverText({ text, mainBG, overlayBG, borderColor, animaColor }) {
     return (
         <motion.div
             className="relative w-11/12 h-14 border content-center overflow-hidden"
@@ -10,9 +10,9 @@ function HoverText({ text, mainBG, overlayBG, borderColor }) {
             whileHover="hover" // Trigger animation on hover
         >
             <div className={`${styles.animation} absolute inset-0`}>
-                <div className={`${styles.borderTop}`}></div>
+                <div className={`${!animaColor ? styles.borderTop: styles.givenTopColor}`}></div>
                 {/* Bottom border */}
-                <div className={`${styles.borderBottom}`}></div>
+                <div className={`${!animaColor ? styles.borderBottom: styles.givenBottomColor}`}></div>
             </div>
 
             {/* Initial static text */}
@@ -25,7 +25,7 @@ function HoverText({ text, mainBG, overlayBG, borderColor }) {
                 }}
                 initial={{ x: 0, opacity: 1 }} // Start at original position, fully visible
                 transition={{
-                    duration: 2, // Total duration for the animation sequence
+                    duration: 1, // Total duration for the animation sequence
                     ease: [0.2, 1, 0.2, 1], // Smooth easing
                     times: [0, 0, 0, 1], // Adjust timing for each step in the animation
                 }}
@@ -41,7 +41,7 @@ function HoverText({ text, mainBG, overlayBG, borderColor }) {
                     hover: { x: '0%' }, // Slide in on hover
                 }}
                 initial={{ x: '-100%' }} // Initially hidden (off-screen)
-                transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} // Smooth transition for the div
+                transition={{ duration: 1, ease: [0.2, 1, 0.2, 1] }} // Smooth transition for the div
                 className="w-full h-full absolute top-0 left-0 content-center z-40"
                 style={{ backgroundColor: overlayBG }}
             />

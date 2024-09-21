@@ -21,7 +21,9 @@ export default {
         'secondText': 'rgb(54, 47, 90)',
         'brown7': '#dbbebb',
         'brown15Text': 'rgb(153, 92, 86)',
-        'purpleBlur': 'rgba(38, 33, 64, .5)'
+        'purpleBlur': 'rgba(38, 33, 64, .5)',
+        'solutionsGradientTop': 'rgba(25, 21, 48, 0.3)',
+        'solutionsGradientBottom': 'rgba(25, 21, 48, 0.7)'
       }
     },
   },
