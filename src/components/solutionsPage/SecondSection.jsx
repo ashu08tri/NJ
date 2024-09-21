@@ -28,6 +28,18 @@ const data = [
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65119222f421c66b366f44bb_pexels-tima-miroshnichenko-5717271-p-1080.jpg',
         desc: 'Save more with strategic tax planning and complete compliance.'
     },
+    {
+        sNo: 5,
+        title: 'Sustainable Investing',
+        img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651ec8c2912d191888a871a2_ethan-rougon-oIlix2slmsI-unsplash-p-800.jpg',
+        desc: 'Invest responsibly with ESG portfolios and impact measurement.'
+    },
+    {
+        sNo: 6,
+        title: 'Financial Education',
+        img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6511925718ee4e723e4f13d3_pexels-tima-miroshnichenko-5717313-p-1080.jpg',
+        desc: 'Empower your financial decisions through workshops and webinars.'
+    }
 ];
 
 function SecondSection() {
@@ -99,9 +111,9 @@ function SecondSection() {
         <div className='bg-[#e4cecc] pt-10'>
             <div>
                 {/* Top text */}
-                <div className='pl-10 md:pl-16 py-10 text-[#352d5e]'>
-                    <p>Choose From</p>
-                    <p className='text-6xl font-medium py-5'>Adaptive Financial Solutions</p>
+                <div className='px-3 md:px-16 py-10 text-[#352d5e] flex flex-col items-center'>
+                    <p>Commitment to Excellence</p>
+                    <p className='text-3xl md:text-5xl md:leading-normal text-center font-medium py-5 md:w-3/4'><span className='opacity-70'>By partnering with us,</span>you're choosing a financial advisor who is committed to setting you on the path to financial success.</p>
                 </div>
                 {/* List Items */}
                 <div>
