@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ParallaxImage from '../animations/ParallaxImage';
 import SlideReveal from '../animations/SlideReveal';
-import { useEffect, useState, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-  
+
 
 function ThirdSection() {
 
