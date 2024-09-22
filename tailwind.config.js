@@ -22,8 +22,14 @@ export default {
         'brown7': '#dbbebb',
         'brown15Text': 'rgb(153, 92, 86)',
         'purpleBlur': 'rgba(38, 33, 64, .5)',
+        'purpleNoBlur': 'rgba(38, 33, 64, .7)',
+        'purpleBlurDark': 'rgba(54, 47, 90, .7)',
+        'purpleNoBlurDark': 'rgba(54, 47, 90, .9)',
         'solutionsGradientTop': 'rgba(25, 21, 48, 0.3)',
         'solutionsGradientBottom': 'rgba(25, 21, 48, 0.7)'
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #1e1a33, rgba(15, 13, 26, 0) 60%), linear-gradient(to bottom, #1e1a33, rgba(11, 31, 102, .2))',
       }
     },
   },

@@ -11,6 +11,7 @@ function Header() {
         src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6516e3fae8b274b4838678cb_bda21aa-c30-c764-e1f2-f65b041c420-poster-00001.jpg"
         alt="header_img"
         className='w-full h-full object-cover'
+        loading='lazy'
       />
 
       {/* Gradient overlay */}
