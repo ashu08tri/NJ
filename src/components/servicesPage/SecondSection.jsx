@@ -1,4 +1,4 @@
-import { useRef,useState, useEffect } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import SlideReveal from '../animations/SlideReveal';
 import { FaArrowRight } from "react-icons/fa6";
@@ -44,50 +44,6 @@ const data = [
 ]
 
 function SecondSection() {
-
-    const [screenSize, setScreenSize] = useState('large');
-
-    const updateScreenSize = () => {
-        if (window.matchMedia('(max-width: 640px)').matches) {
-            setScreenSize('small');
-        } else if (window.matchMedia('(max-width: 1024px)').matches) {
-            setScreenSize('medium');
-        } else {
-            setScreenSize('large');
-        }
-    };
-
-    useEffect(() => {
-        // Initial call to set the screen size
-        updateScreenSize();
-
-        window.addEventListener('resize', updateScreenSize);
-        return () => {
-            window.removeEventListener('resize', updateScreenSize);
-        };
-    }, []);
-
-    const heightVariants = {
-        initial: {
-            height:
-                screenSize === 'small'
-                    ? 'auto'
-                    : screenSize === 'medium'
-                        ? '160px'
-                        : '160px',
-            transition: { duration: 0.5 },
-        },
-        hover: {
-            height:
-                screenSize === 'small'
-                    ? 'auto'
-                    : screenSize === 'medium'
-                        ? '180px'
-                        : '180px',
-            transition: { duration: 0.5 },
-        },
-    };
-
     return (
         <div className='bg-[#f5e7e6] text-[#995c56] px-6 md:px-20'>
             <div className='text-[#262140] flex justify-between py-24'>
@@ -104,9 +60,9 @@ function SecondSection() {
                             <motion.ul key={i}
                                 ref={ref}
                                 initial="initial"
-                                variants={heightVariants} 
+                                 
                                 whileHover="hover"
-                                className='flex flex-col justify-between md:flex-row relative md:justify-between md:items-center cursor-pointer py-10 border-b border-[#995c56] first:border-t-2 last:border-0'>
+                                className='flex flex-col h-auto md:flex-row relative md:justify-between md:hover:py-12 transition-all duration-150 ease-linear md:items-center cursor-pointer py-10 border-b border-[#995c56] first:border-t-2 last:border-0'>
 
                                 <div className='w-full md:w-7/12 flex flex-col md:flex-row justify-start md:items-center md:gap-20'>
 
@@ -157,7 +113,7 @@ function SecondSection() {
                                     }}
                                     initial={{ x: 0, opacity: 1 }} // Start at original position, fully visible
                                     transition={{
-                                        duration: 2, // Total duration for the animation sequence
+                                        duration: 1, // Total duration for the animation sequence
                                         ease: [0.2, 1, 0.2, 1], // Smooth easing
                                         times: [0, 0, 0, 1], // Adjust timing for each step in the animation
                                     }}
