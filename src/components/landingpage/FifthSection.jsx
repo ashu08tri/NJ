@@ -11,6 +11,8 @@ function FifthSection() {
   return (
     <div className='h-[130vh] relative border-b border-brown9'>
       <Carousel images={images} />
+      <div className="absolute h-full inset-0 bg-gradient-to-t from-[rgba(87,74,147,0.3)] to-[rgba(87,74,147,0.3)]"></div>
+      <div className="absolute h-full inset-0 bg-gradient-to-b from-[rgba(87,74,147,0.3)] to-[rgba(87,74,147,0.3)]"></div>
       <div className='absolute inset-0 h-full w-full md:flex cursor-pointer'>
         {/* First Column */}
         <div className='w-full h-1/3 md:w-1/3 md:h-full hover:border-y md:hover:border-x border-brown9 flex md:flex-col justify-center items-center duration-500 ease-in-out hover:bg-[#352d5e] md:hover:w-[600px] hover:delay-100'>

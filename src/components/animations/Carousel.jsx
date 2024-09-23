@@ -42,7 +42,7 @@ const Carousel = ({ images }) => {
         {/* Render the previous image */}
         <motion.div
           key={currentIndex}
-          className="absolute top-0 left-0 h-full bg-cover bg-center bg-fixed"
+          className="absolute top-0 left-0 h-full w-full bg-cover bg-center"
           style={{ backgroundImage: `url(${images[currentIndex]})` }}
           initial="enter"
           animate="center"
@@ -57,7 +57,7 @@ const Carousel = ({ images }) => {
         {/* Render the next image */}
         <motion.div
           key={nextIndex}
-          className="absolute top-0 left-0 h-full bg-cover bg-center bg-fixed"
+          className="absolute top-0 left-0 h-full w-full bg-cover bg-center"
           style={{ backgroundImage: `url(${images[nextIndex]})` }}
           initial="enter"
           animate="center"
@@ -69,8 +69,6 @@ const Carousel = ({ images }) => {
           {/* Full Gradient Overlay */}
         </motion.div>
       </AnimatePresence>
-      <div className="absolute h-full inset-0 bg-gradient-to-t from-[rgba(87,74,147,0.3)] to-[rgba(87,74,147,0.3)]"></div>
-      <div className="absolute h-full inset-0 bg-gradient-to-b from-[rgba(87,74,147,0.3)] to-[rgba(87,74,147,0.3)]"></div>
     </div>
   );
 };

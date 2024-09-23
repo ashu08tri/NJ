@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./page/Home";
 import Solutions from './page/Solutions';
 import Services from './page/Services';
+import About from "./page/About";
 import Footer from './components/Footer';
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </AnimatePresence>
       <Footer />
