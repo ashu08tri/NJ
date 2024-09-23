@@ -22,7 +22,7 @@ function Footer() {
             <ul className='text-2xl text-[#cc7b72] group hover:text-brown9HoverBox'>
               <li className='transition-all duration-75 hover:px-6 border-l px-4 pb-3 border-brown9HoverBox hover:text-[#e4938a] hover:border-[#e4938a]'><Link to='/'>Home</Link></li>
               <li className='transition-all duration-75 hover:px-6 border-l px-4 py-3 border-brown9HoverBox hover:text-[#e4938a] hover:border-[#e4938a]'><Link to='/solutions'>Solutions</Link></li>
-              <li className='transition-all duration-75 hover:px-6 border-l px-4 py-3 border-brown9HoverBox hover:text-[#e4938a] hover:border-[#e4938a]'><Link to='/service'>Service</Link></li>
+              <li className='transition-all duration-75 hover:px-6 border-l px-4 py-3 border-brown9HoverBox hover:text-[#e4938a] hover:border-[#e4938a]'><Link to='/services'>Service</Link></li>
               <li className='transition-all duration-75 hover:px-6 border-l px-4 py-3 border-brown9HoverBox hover:text-[#e4938a] hover:border-[#e4938a]'><Link to='/about'>About</Link></li>
               <li className='transition-all duration-75 hover:px-6 border-l px-4 pt-3 border-brown9HoverBox hover:text-[#e4938a] hover:border-[#e4938a]'><Link to='/case_studies'>Case Studies</Link></li>
             </ul>

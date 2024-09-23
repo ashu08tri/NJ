@@ -9,7 +9,7 @@ function ThirdSection() {
     
   return (
     <div className='relative overflow-hidden h-[95vh] bg-[#262140]'>
-      <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515539f331a3329d9005b5d_refargotohp-x8dTKZ5IWp0-unsplash.webp"} alt={"thirdSection_img"}
+      <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515771f5f74d9cf60273f30_pexels-gustavo-fring-3873856.webp"} alt={"thirdSection_img"}
        scrollNum={25} delay={1} height={'180%'} />
        <SlideReveal bgColor={"#362f5a"}/>
        <Link to='/consultancy' className='absolute top-20 md:top-24 left-16 md:left-20 w-[70vw] md:w-[25vw] h-[50vh] bg-[#995c56] border border-[#e4938a] text-[#f8b3ac] flex flex-col gap-8 justify-center items-center'>
