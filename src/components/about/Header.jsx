@@ -45,12 +45,12 @@ function Header() {
                 </div>
 
                 <div className='w-[85%] h-16 border border-[#54498c] border-b-0 flex items-center justify-evenly'>
-                    <p className='w-1/2 flex justify-center items-center gap-4 md:gap-8 hover:bg-purpleNoBlurDark hover:w-[55%] transition-all duration-500 ease-in-out h-full' style={{ backdropFilter: 'blur(15px)' }}>
+                <p className='w-1/2 flex justify-center items-center gap-4 md:gap-8 bg-purpleBlur hover:bg-purpleNoBlur hover:w-[55%] transition-all duration-500 ease-in-out border-r border-[#54498c] h-full' style={{ backdropFilter: 'blur(15px)' }}>
                         <span><FaArrowDown size={16} /></span>
-                        <span>Services</span>
+                        <span>EXPLORE</span>
                     </p>
                     <p className='w-1/2 flex justify-center items-center gap-4 md:gap-8 bg-purpleBlurDark hover:bg-purpleNoBlurDark hover:w-[55%] transition-all duration-500 ease-in-out h-full'>
-                        <span>Free Consultation</span>
+                        <span>CASE STUDIES</span>
                         <span><FaArrowRight size={16} /></span>
                     </p>
                 </div>
