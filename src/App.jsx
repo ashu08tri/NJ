@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function App() {
   const location = useLocation();
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative">
       <Navbar />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>

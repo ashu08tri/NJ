@@ -14,8 +14,8 @@ function Header() {
         <div className='relative h-screen bg-[#262140]'>
             <Carousel images={images} />
             <div className='absolute inset-0 h-full w-full bg-custom-gradient mix-blend-multiply' />
-            <div className='absolute top-36 left-4 md:left-10 h-full w-full text-headerText'>
-                <div className='w-full'>
+            <div className='absolute top-36 left-4 md:left-10 h-full text-headerText'>
+                <div>
                     <motion.p 
                      initial={{opacity: 0, x: 100}} animate={{opacity:1, x: 0, transition: {delay:.6, duration: .8, ease: 'easeIn'}}}
                     className='border-l pl-8 border-headerText text-xl w-3/4 md:w-1/4'>We belive that financial success is within everyone&apos;s reach.</motion.p>
