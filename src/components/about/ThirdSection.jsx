@@ -9,9 +9,9 @@ function ThirdSection() {
       {/* Left Section with SlideReveal */}
       <div className='w-1/2 h-full relative'>
           <div className="relative w-full h-full overflow-hidden">
-            <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/650c6964876ba0c8dcac575d_pexels-produtora-midtrack-14996830.webp"}
-              alt={"thirdSection_img"} scrollNum={18} delay={0.6} height={'120%'}/>
-            
+              <img src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/651b23559e8a4048e9b75f73_aa1e67c-143f-d653-25b-4842e460b4b1-poster-00001.jpg" alt="aboutFourth_img" 
+              className='w-full h-full object-cover'
+              />
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#b36b64] to-[#b36b64] opacity-20"></div>
 
@@ -26,16 +26,15 @@ function ThirdSection() {
                 ease: 'linear', // Smooth continuous motion
               }}
             >
-              <p className="text-brown15Text opacity-35 text-[170px] tracking-widest font-bold uppercase">
+              <p className="text-brown9 opacity-35 text-[170px] tracking-widest font-bold uppercase">
                 Financial
               </p>
-              <p className="text-brown15Text opacity-35 text-[170px] tracking-widest font-bold uppercase pl-4">
+              <p className="text-brown9 opacity-35 text-[170px] tracking-widest font-bold uppercase pl-4">
                 Solutions
               </p>
             </motion.div>
 
             {/* SlideReveal Component */}
-            <SlideReveal bgColor={'#4c2e2b'}/>
           </div>
         
       </div>
@@ -47,7 +46,7 @@ function ThirdSection() {
         {/* Wrapper for the image and gradient */}
         <div className="relative w-3/4 md:w-8/12 md:h-80 overflow-hidden">
         <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/651c05ee5d1d847ed1b58993_clay-banks-JPhVGeY4H7I-unsplash-p-1080.webp"}
-            alt={"thirdSection_img2"} scrollNum={18} delay={0.6} height={'120%'}/>
+            alt={"thirdSection_img2"} scrollNum={38} delay={0.6} height={'120%'}/>
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#b36b64] to-[#b36b64] opacity-20"></div>
           <SlideReveal bgColor={'#4c2e2b'}/>
