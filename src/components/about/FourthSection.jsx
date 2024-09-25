@@ -9,11 +9,11 @@ function FourthSection() {
 
             <p className='text-4xl md:w-1/2 md:text-5xl font-medium leading-10 text-[#362f5a] py-10'>Our team <span className='opacity-70'>is eager to help you achieve your financial goals</span></p>
 
-            <div className='md:flex justify-between items-center gap-10'>
+            <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
                 <div className='relative overflow-hidden w-full h-[50vh] md:w-1/2 md:h-[95vh]'>
 
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c275b185176c121267034_pexels-pavel-danilyuk-7519011.jpg"} alt={"aboutImg4"}
-                        scrollNum={45} delay={1} height={'120%'}
+                        scrollNum={50} delay={1} height={'120%'}
                     />
                     <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#1e1a33] mix-blend-multiply' />
                     <SlideReveal bgColor={"#362f5a"} />
@@ -28,7 +28,7 @@ function FourthSection() {
 
                 <div className='relative overflow-hidden w-full h-[50vh] md:w-1/2 md:h-[95vh]'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c2740acabdcc568b87d63_pexels-ron-lach-7968078.jpg"} alt={"aboutImg4"}
-                        scrollNum={45} delay={1} height={'120%'}
+                        scrollNum={55} delay={1} height={'120%'}
                     />
                     <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#1e1a33] mix-blend-multiply' />
                     <SlideReveal bgColor={"#362f5a"} />

@@ -96,7 +96,7 @@ function SecondSection() {
 
                 <div className='relative w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515d3da912adf16a861c6df_cai-fang-MbxYb4a4AL0-unsplash.jpg"}
-                        alt={"fifthSection_img1"} scrollNum={28} delay={1} height={'120%'} />
+                        alt={"fifthSection_img1"} scrollNum={40} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -120,7 +120,7 @@ function SecondSection() {
 
                 <div className='relative bg-[#1e1a33] w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6ec44cf53a039adf638_juan-rojas-K7in_Hut_90-unsplash.jpg"}
-                        alt={"fifthSection_img2"} scrollNum={28} delay={1} height={'120%'} />
+                        alt={"fifthSection_img2"} scrollNum={40} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -144,7 +144,7 @@ function SecondSection() {
 
                 <div className='relative bg-[#1e1a33] w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f4ffd22cb82fa445996_cai-fang-k_0bcT6ycDk-unsplash.jpg"}
-                        alt={"fifthSection_img3"} scrollNum={28} delay={1} height={'120%'} />
+                        alt={"fifthSection_img3"} scrollNum={40} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div

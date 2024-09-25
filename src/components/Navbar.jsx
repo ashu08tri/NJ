@@ -88,20 +88,20 @@ function Navbar() {
               <ul className='bg-[#362f5a] w-1/2 h-full p-4'>
                 <li className='flex flex-col gap-4'>
                   <li className='text-xs uppercase text-headerText'>Expertise</li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage1'>Home</NavLink></li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage2'>Service</NavLink></li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage3'>Solutions</NavLink></li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage4'>About</NavLink></li>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/'>Home</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/services'>Service</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/solutions'>Solutions</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/about'>About</NavLink>
                 </li>
               </ul>
 
               <ul className='bg-[#262140] w-1/2 h-full p-4'>
                 <li className='flex flex-col gap-4'>
                   <li className='text-xs uppercase text-headerText'>Company</li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage1'>Template1</NavLink></li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage2'>Template1</NavLink></li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage3'>Template1</NavLink></li>
-                  <li className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9'><NavLink to='/subpage4'>Template1</NavLink></li>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/case_study'>Case Studies</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/blog'>Blog</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/contact'>Contact</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/testimonials'>Testimonials</NavLink>
                 </li>
               </ul>
             </motion.ul>

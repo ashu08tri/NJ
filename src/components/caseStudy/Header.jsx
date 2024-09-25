@@ -15,7 +15,7 @@ function Header() {
         <div className='relative h-screen bg-[#262140] overflow-y-hidden'>
             <Carousel images={images} />
             <div className='absolute inset-0 h-full w-full bg-custom-gradient2 mix-blend-normal' />
-            <div className='absolute top-44 flex px-8 md:px-16 gap-10'>
+            <div className='absolute top-52 md:top-44 flex px-8 md:px-16 gap-10'>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0, transition: { delay: 0.5, duration: 0.7, ease: "easeInOut" } }}
