@@ -26,10 +26,15 @@ export default {
         'purpleBlurDark': 'rgba(54, 47, 90, .7)',
         'purpleNoBlurDark': 'rgba(54, 47, 90, .9)',
         'solutionsGradientTop': 'rgba(25, 21, 48, 0.3)',
-        'solutionsGradientBottom': 'rgba(25, 21, 48, 0.7)'
+        'solutionsGradientBottom': 'rgba(25, 21, 48, 0.7)',
+        'purpleGradient' : 'rgba(92, 80, 153, .86)'
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to right, #1e1a33, rgba(15, 13, 26, 0) 60%), linear-gradient(to bottom, #1e1a33, rgba(11, 31, 102, .2))',
+        'custom-gradient2': 'linear-gradient(to bottom, #1e1a33, rgba(255, 255, 255, 0) 10%), linear-gradient(45deg, #262140 25%, rgba(38, 33, 64, .05)), linear-gradient(to bottom, rgba(38, 33, 64, .05), rgba(38, 33, 64, .7));',
+      },
+      boxShadow: {
+        black: '5px 10px 20px rgba(0, 0, 0, 0.7)',
       }
     },
   },
