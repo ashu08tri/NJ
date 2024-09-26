@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, bgFixed }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for left-to-right, -1 for right-to-left
 
@@ -43,7 +43,7 @@ const Carousel = ({ images }) => {
         <motion.div
           key={currentIndex}
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${images[currentIndex]})` }}
+          style={{ backgroundImage: `url(${images[currentIndex]})`, backgroundAttachment: bgFixed }}
           initial="enter"
           animate="center"
           exit="exit"
@@ -58,7 +58,7 @@ const Carousel = ({ images }) => {
         <motion.div
           key={nextIndex}
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${images[nextIndex]})` }}
+          style={{ backgroundImage: `url(${images[nextIndex]})`, backgroundAttachment: bgFixed }}
           initial="enter"
           animate="center"
           exit="exit"

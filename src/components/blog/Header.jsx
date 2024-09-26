@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa6";
 function Header() {
   return (
     <div className='h-[70vh] flex flex-col justify-center gap-16 items-center bg-[#262140] text-[#eca098]'>
-        <p className='text-6xl md:text-8xl font-medium mt-16'>Insightful Reads</p>
+        <p className='text-5xl md:text-8xl font-medium mt-16'>Insightful Reads</p>
         <a href='#blog' className='uppercase pr-8 pl-2 border border-transparent text-brown9 hover:border-brown9 hover:bg-brown9Hover rounded-3xl hover:pl-4 transition-all duration-300 flex justify-between items-center gap-4'>
                         <div className='relative w-12 h-12 flex items-center justify-center'>
                             <svg
