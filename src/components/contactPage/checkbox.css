@@ -1,0 +1,36 @@
+.custom-checkbox {
+    appearance: none;
+    width: 30px;
+    height: 25px;
+    border: 2px solid #b36b64; /* Light orange border */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    cursor: pointer;
+    transition: border 0.1s ease;
+    margin-right: 15px;
+  }
+  
+  .custom-checkbox:hover {
+    border-width: 3.5px; /* Increase border on hover */
+  }
+  
+  .custom-checkbox:checked:hover {
+    border-width: 2px; /* Reset border width on hover when checked */
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #f8b3ac; /* Orange background when checked */
+    border-color: #f8b3ac;
+  }
+  
+  .custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 5px;
+    height: 10px;
+    border: solid black; /* Black tick */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); /* Creates the tick mark */
+  }
