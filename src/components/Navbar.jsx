@@ -6,20 +6,26 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosSearch } from "react-icons/io";
 import { BsChatLeftText } from "react-icons/bs";
 import MenuModal from './MenuModal';
-import HoverText from './animations/HoverText';
+import SearchModal from './SearchModal';
 
 
 function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   const openMenuHandler = () => {
     setMenuOpen(!menuOpen);
   }
 
+  const openSearchModalHandler = () => {
+    setSearchModalOpen(!searchModalOpen);
+  }
+
   return (
     <nav className='h-28 z-50 text-headerText absolute top-0 w-full flex justify-between px-4 md:px-10 hover:bg-navHover border-t hover:border-b border-navBorder'>
       <AnimatePresence>{menuOpen && <MenuModal onClose={openMenuHandler} />}</AnimatePresence>
+      <AnimatePresence>{searchModalOpen && <SearchModal onClose={openSearchModalHandler} />}</AnimatePresence>
       <div className='w-1/2 md:w-7/12 flex justify-start gap-12 items-center h-full'>
         <div className='relative'>
           {/* Wrapper for animated borders */}
@@ -113,7 +119,7 @@ function Navbar() {
         <ul className='flex justify-end gap-10 items-center w-full md:pl-16'>
           <li><NavLink to='/consultation' className='hidden md:inline text-sm md:text-base hover:bg-brown9HoverBox hover:border border-brown9 rounded-3xl py-2 px-5'>Consultation</NavLink></li>
           <li className='flex gap-3 items-center w-full'>
-            <li className='bg-brown9HoverBox border border-brown9 p-4 rounded-full hover:bg-navHoverIcon text-sm md:text-base'><IoIosSearch /></li>
+            <li onClick={openSearchModalHandler} className='bg-brown9HoverBox border border-brown9 p-4 rounded-full hover:bg-navHoverIcon text-sm md:text-base'><IoIosSearch /></li>
             <li className='bg-brown9HoverBox border border-brown9 p-4 rounded-full hover:bg-navHoverIcon text-sm md:text-base'><BsChatLeftText /></li>
           </li>
         </ul>
