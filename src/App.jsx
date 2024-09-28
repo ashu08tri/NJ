@@ -9,6 +9,7 @@ import About from "./page/About";
 import Contact from './page/Contact';
 import Blog from './page/Blog';
 import CaseStudy from "./page/CaseStudy";
+import Testimonials from "./page/Testimonials";
 import Footer from './components/Footer';
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/case_study" element={<CaseStudy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </AnimatePresence>
       <Footer />
