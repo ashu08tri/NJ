@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -7,6 +8,7 @@ import Solutions from './page/Solutions';
 import Services from './page/Services';
 import About from "./page/About";
 import Contact from './page/Contact';
+import Consultation from "./page/Consultation";
 import Blog from './page/Blog';
 import CaseStudy from "./page/CaseStudy";
 import Testimonials from "./page/Testimonials";
@@ -15,6 +17,11 @@ import Footer from './components/Footer';
 
 function App() {
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div className="relative">
       <Navbar />
@@ -27,6 +34,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/case_study" element={<CaseStudy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/consultation" element={<Consultation />} />
           <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </AnimatePresence>

@@ -82,7 +82,7 @@ function Navbar() {
           <li className='py-10'><NavLink to='/services' className={({ isActive }) => isActive ? styles.active : ''}>Services</NavLink></li>
           <li className='py-10'><NavLink to='/about' className={({ isActive }) => isActive ? styles.active : ''}>About</NavLink></li>
           <motion.li whileHover='hover' className='relative group py-10'>
-            <NavLink to='/company' className='hover:text-highlight transition'>Company</NavLink>
+            <li className='hover:text-highlight transition cursor-pointer'>Company</li>
 
             {/* Dropdown menu */}
             <motion.ul
@@ -120,7 +120,34 @@ function Navbar() {
           <li><NavLink to='/consultation' className='hidden md:inline text-sm md:text-base hover:bg-brown9HoverBox hover:border border-brown9 rounded-3xl py-2 px-5'>Consultation</NavLink></li>
           <li className='flex gap-3 items-center w-full'>
             <li onClick={openSearchModalHandler} className='bg-brown9HoverBox border border-brown9 p-4 rounded-full hover:bg-navHoverIcon text-sm md:text-base'><IoIosSearch /></li>
-            <li className='bg-brown9HoverBox border border-brown9 p-4 rounded-full hover:bg-navHoverIcon text-sm md:text-base'><BsChatLeftText /></li>
+            <motion.li whileHover='hover' className='relative group py-10'>
+            <li className='bg-brown9HoverBox border border-brown9 p-4 rounded-full hover:bg-navHoverIcon text-sm md:text-base transition'><BsChatLeftText /></li>
+    
+
+            {/* Dropdown menu */}
+            <motion.ul
+              initial={{ opacity: 0, y: 20, pointerEvents: 'none' }}
+              variants={{ hover: { opacity: 1, y: 0, pointerEvents: 'auto' } }}
+              transition={{ duration: 0.2, ease: 'easeIn' }}
+              className='absolute flex flex-col left-[-300%] bg-[#262140]  top-28 items-center w-[15vw] shadow-lg border border-[#6b5db3] z-10 px-4'
+            >
+              <ul className='w-full h-full p-4 border-b border-[#6b5db3]'>
+                <li className='flex flex-col gap-4'>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/contact'>Email</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/contact'>Call us</NavLink>
+                </li>
+              </ul>
+
+              <ul className='w-full h-full p-4'>
+                <li className='flex flex-col gap-4'>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/'>Linkedin</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/'>Instagram</NavLink>
+                  <NavLink className='py-2 px-4 hover:bg-highlight hover:bg-brown9HoverBox rounded-md hover:border border-brown9' to='/'>Youtube</NavLink>
+                </li>
+              </ul>
+            </motion.ul>
+          </motion.li>
+            
           </li>
         </ul>
       </div>
