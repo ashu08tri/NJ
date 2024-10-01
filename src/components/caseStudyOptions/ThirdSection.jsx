@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ParallaxImage from '../animations/ParallaxImage';
@@ -5,21 +6,26 @@ import SlideReveal from '../animations/SlideReveal';
 import HoverText from '../animations/HoverText';
 
 
-function SecondSection() {
+function ThirdSection() {
 
+    const { id } = useParams();
+    
     return (
         <div className='bg-[#1e1a33] p-8 md:p-12 flex flex-col justify-center gap-10 text-[#f8b3ac]'>
 
-            <div className='mt-28 mb-12 flex md:px-10 justify-start gap-6'>
+            <div className='mt-28 mb-12 flex flex-col md:px-10 justify-start gap-6'>
+                <p className="text-3xl md:text-7xl">Other Case Studies</p>
+                <div className="mt-5 flex justify-start gap-6">
                 <p className='uppercase'>Clientele</p>
                 <p className='opacity-80 md:px-16 md:w-3/6'>Our case studies showcase a variety of financial solutions, customized to meet individual needs, that have led to significant gains and secure financial futures for our clients.</p>
+                </div>
             </div>
 
-            <div className='h-[200vh] md:h-[80vh] flex flex-col md:flex-row gap-10'>
+            <div className='grid grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2 gap-10'>
 
-                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:-translate-y-2 hover:shadow-black transition-all duration-100'>
+            {id !== 'smart_investment' && <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:-translate-y-2 hover:shadow-black transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6cff673e6595d2f866a_the-blowup-hK-jdvutWoU-unsplash.jpg"}
-                        alt={"fifthSection_img1"} scrollNum={25} delay={1} height={'120%'} />
+                        alt={"fifthSection_img1"} scrollNum={35} delay={1} height={'120%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -39,11 +45,11 @@ function SecondSection() {
                             <Link to='smart_investment' className='w-full'><HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
-                </div>
+                </div>}
 
-                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6f479391f5e688d7586_katherine-carlyon-MV43AzaFalM-unsplash.jpg"}
-                        alt={"fifthSection_img2"} scrollNum={25} delay={1} height={'120%'} />
+                        alt={"fifthSection_img2"} scrollNum={35} delay={1} height={'120%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -68,9 +74,9 @@ function SecondSection() {
                     </motion.div >
                 </div>
 
-                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f43eed1ec5d4fc871a5_drahomir-hugo-posteby-mach-9Zb6mnHBH7E-unsplash.jpg"}
-                        alt={"fifthSection_img3"} scrollNum={25} delay={1} height={'120%'} />
+                        alt={"fifthSection_img3"} scrollNum={38} delay={1} height={'120%'} />
                     <motion.div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -91,13 +97,10 @@ function SecondSection() {
                         </div>
                     </motion.div >
                 </div>
-            </div>
 
-            <div className='h-[200vh] md:h-[80vh] flex flex-col md:flex-row gap-10'>
-
-                <div className='relative w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515d3da912adf16a861c6df_cai-fang-MbxYb4a4AL0-unsplash.jpg"}
-                        alt={"fifthSection_img1"} scrollNum={40} delay={1} height={'150%'} />
+                        alt={"fifthSection_img1"} scrollNum={50} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -119,9 +122,9 @@ function SecondSection() {
                     </motion.div >
                 </div>
 
-                <div className='relative bg-[#1e1a33] w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative bg-[#1e1a33] w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6ec44cf53a039adf638_juan-rojas-K7in_Hut_90-unsplash.jpg"}
-                        alt={"fifthSection_img2"} scrollNum={40} delay={1} height={'150%'} />
+                        alt={"fifthSection_img2"} scrollNum={52} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -143,9 +146,9 @@ function SecondSection() {
                     </motion.div >
                 </div>
 
-                <div className='relative bg-[#1e1a33] w-full h-[150%] md:h-[95%] md:w-1/3 overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                <div className='relative bg-[#1e1a33] w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f4ffd22cb82fa445996_cai-fang-k_0bcT6ycDk-unsplash.jpg"}
-                        alt={"fifthSection_img3"} scrollNum={42} delay={1} height={'150%'} />
+                        alt={"fifthSection_img3"} scrollNum={52} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
                     <SlideReveal bgColor={'#54498c'} />
                     <motion.div
@@ -168,9 +171,8 @@ function SecondSection() {
                 </div>
 
             </div>
-
         </div>
     )
 }
 
-export default SecondSection;
+export default ThirdSection;

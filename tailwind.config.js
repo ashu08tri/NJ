@@ -27,7 +27,8 @@ export default {
         'purpleNoBlurDark': 'rgba(54, 47, 90, .9)',
         'solutionsGradientTop': 'rgba(25, 21, 48, 0.3)',
         'solutionsGradientBottom': 'rgba(25, 21, 48, 0.7)',
-        'purpleGradient' : 'rgba(92, 80, 153, .86)'
+        'purpleGradient' : 'rgba(92, 80, 153, .86)',
+        'lightBorder': 'rgba(230, 148, 140, .2)'
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to right, #1e1a33, rgba(15, 13, 26, 0) 60%), linear-gradient(to bottom, #1e1a33, rgba(11, 31, 102, .2))',

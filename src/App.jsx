@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
+import ErrorPage from "./page/ErrorPage";
 import Navbar from "./components/Navbar";
 import Home from "./page/Home";
 import Solutions from './page/Solutions';
@@ -11,6 +12,7 @@ import Contact from './page/Contact';
 import Consultation from "./page/Consultation";
 import Blog from './page/Blog';
 import CaseStudy from "./page/CaseStudy";
+import CaseStudyOptions from "./page/CaseStudyOptions";
 import Testimonials from "./page/Testimonials";
 import Footer from './components/Footer';
 
@@ -27,6 +29,7 @@ function App() {
       <Navbar />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/services" element={<Services />} />
@@ -36,6 +39,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/case_study/:id" element={<CaseStudyOptions />} />
         </Routes>
       </AnimatePresence>
       <Footer />
