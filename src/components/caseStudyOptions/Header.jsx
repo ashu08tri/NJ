@@ -23,8 +23,8 @@ function Header({image, title, name, desc}) {
           animate={{ opacity: 1, y: 0, transition: { delay: 0.6, duration: 0.7, ease: "easeInOut" } }}
           className='flex flex-col gap-4 text-headerText'
         >
-          <p className='md:text-2xl tracking-wider'>{name}</p>
-          <p className='text-3xl md:text-6xl tracking-wider md:w-3/4'>{title}</p>
+          <p className='md:text-2xl tracking-wider uppercase'>{name}</p>
+          <p className='text-3xl md:text-5xl tracking-wider md:w-2/4'>{title}</p>
           <p className='text-headerTextOpacity pt-5 md:w-1/2'>{desc}</p>
         </motion.div>
       </div>

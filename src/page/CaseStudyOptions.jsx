@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SmartInvestment from "../components/caseStudyOptions/smartInvestment/SmartInvestment";
+import TaxTriumph from "../components/caseStudyOptions/taxTriumph/TaxTriumph";
 import ErrorPage from "./ErrorPage"; // Import the error page component
 
 const CaseStudyOptions = () => {
@@ -12,7 +13,8 @@ const CaseStudyOptions = () => {
     // Simulate data fetching or API call for the case study by id
     const fetchCaseStudy = async () => {
       const caseStudies = [
-        { id: "smart_investment"},
+        { id: "smart-investment"},
+        { id: "tax-triumph"},
         // ...other case studies
       ];
 
@@ -32,7 +34,8 @@ const CaseStudyOptions = () => {
 
   return (
     <>
-    {id === "smart_investment" && <SmartInvestment />}
+    {id === "smart-investment" && <SmartInvestment />}
+    {id === "tax-triumph" && <TaxTriumph />}
     </>
   );
 };

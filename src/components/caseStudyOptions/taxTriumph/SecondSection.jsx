@@ -10,34 +10,35 @@ function SecondSection() {
       <li className='border-l-2 border-[#b36b64] pl-4 py-3 font-medium'>About</li>
 
       <li className='border-l-2 border-lightBorder pl-4 py-2 w-3/4'>
-        <p>Achieving High Returns with Tailored Investment Advisory Services</p>
+        <p>Minimizing Tax Liabilities through Strategic Tax Planning</p>
       </li>
 
       <li className='border-l-2 border-lightBorder pl-4 py-3'>
         <p className='font-medium'>Client</p>
-        <p>Karen's Art Gallery</p>
+        <p>TechPulse Solutions</p>
       </li>
 
       <li className='border-l-2 border-lightBorder pl-4 py-3'>
         <p className='font-medium'>Industry</p>
-        <p>Arts & Culture</p>
+        <p>Information Technology</p>
       </li>
 
       <li className='border-l-2 border-lightBorder pl-4 py-3'>
         <p className='font-medium'>Duration</p>
-        <p>8 months</p>
+        <p>4 months</p>
       </li>
 
       <li className='border-l-2 border-lightBorder pl-4 py-3'>
         <p className='font-medium'>Solution</p>
-        <Link to='/'>Investment Advisory</Link>
+        <Link to='/'>Tax Optimization</Link>
       </li>
 
       <li className='border-l-2 border-lightBorder pl-4 py-3'>
         <p className='font-medium'>Services</p>
         <div className='flex flex-col'>
-        <Link to='/'>Risk Assessment</Link>
-        <Link to='/'>Portfolio Optimization</Link>
+        <Link to='/'>Tax Compliance</Link>
+        <Link to='/'>Tax Strategy Consultation</Link>
+        <Link to='/'>Tax-Efficient Drawdowns</Link>
         </div>
       </li>
 

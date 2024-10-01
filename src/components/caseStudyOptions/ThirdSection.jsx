@@ -23,7 +23,7 @@ function ThirdSection() {
 
             <div className='grid grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2 gap-10'>
 
-            {id !== 'smart_investment' && <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:-translate-y-2 hover:shadow-black transition-all duration-100'>
+            {id !== 'smart-investment' && <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:-translate-y-2 hover:shadow-black transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6cff673e6595d2f866a_the-blowup-hK-jdvutWoU-unsplash.jpg"}
                         alt={"fifthSection_img1"} scrollNum={35} delay={1} height={'120%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
@@ -42,12 +42,12 @@ function ThirdSection() {
                                 <p className='text-xs uppercase'>Karen's Art Gallery</p>
                                 <p className='text-3xl'>Smart Investments</p>
                             </div>
-                            <Link to='smart_investment' className='w-full'><HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
+                            <Link to='/case_study/smart-investment' className='w-full'><HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>}
 
-                <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                {id !== 'tax-triumph' && <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6f479391f5e688d7586_katherine-carlyon-MV43AzaFalM-unsplash.jpg"}
                         alt={"fifthSection_img2"} scrollNum={35} delay={1} height={'120%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
@@ -69,10 +69,10 @@ function ThirdSection() {
                                 <p className='text-xs uppercase'>TechPulse Solutions</p>
                                 <p className='text-3xl'>Tax Triumph</p>
                             </div>
-                            <HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='/case_study/tax-triumph' className='w-full'><HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
-                </div>
+                </div>}
 
                 <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f43eed1ec5d4fc871a5_drahomir-hugo-posteby-mach-9Zb6mnHBH7E-unsplash.jpg"}

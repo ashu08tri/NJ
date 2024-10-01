@@ -36,7 +36,7 @@ function SecondSection() {
                                 <p className='text-xs uppercase'>Karen's Art Gallery</p>
                                 <p className='text-3xl'>Smart Investments</p>
                             </div>
-                            <Link to='smart_investment' className='w-full'><HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
+                            <Link to='smart-investment' className='w-full'><HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -63,7 +63,7 @@ function SecondSection() {
                                 <p className='text-xs uppercase'>TechPulse Solutions</p>
                                 <p className='text-3xl'>Tax Triumph</p>
                             </div>
-                            <HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='tax-triumph' className='w-full'><HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -87,7 +87,7 @@ function SecondSection() {
                         <p className='text-xs uppercase'>Emily Thompson</p>
                         <p className='text-3xl'>Wealth Boost</p>
                         </div>
-                            <HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='wealth-boost' className='w-full'><HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -114,7 +114,7 @@ function SecondSection() {
                         <p className='text-xs uppercase'>Evergreen Co.</p>
                         <p className='text-3xl'>Green Growth</p>
                         </div>
-                            <HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='green-growth'><HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -138,7 +138,7 @@ function SecondSection() {
                         <p className='text-xs uppercase'>Harmony Communities</p>
                         <p className='text-3xl'>Retirement Bliss</p>
                         </div>
-                            <HoverText text={'Retirement Bliss'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='retirement-bliss' className='w-full'><HoverText text={'Retirement Bliss'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -162,7 +162,7 @@ function SecondSection() {
                         <p className='text-xs uppercase'>Jhon&apos;s Catering Services</p>
                         <p className='text-3xl'>Business Flourish</p>
                         </div>
-                            <HoverText text={'Business Flourish'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='business-flourish'><HoverText text={'Business Flourish'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
