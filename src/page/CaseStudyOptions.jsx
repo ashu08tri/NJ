@@ -2,6 +2,10 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SmartInvestment from "../components/caseStudyOptions/smartInvestment/SmartInvestment";
 import TaxTriumph from "../components/caseStudyOptions/taxTriumph/TaxTriumph";
+import WealthBoost from "../components/caseStudyOptions/wealthBoost/WealthBoost";
+import GreenGrowth from "../components/caseStudyOptions/greenGrowth/GreenGrowth";
+import RetirementBliss from "../components/caseStudyOptions/retirementBliss/RetirementBliss";
+import BusinessFlourish from "../components/caseStudyOptions/businessFlourish/BusinessFlourish";
 import ErrorPage from "./ErrorPage"; // Import the error page component
 
 const CaseStudyOptions = () => {
@@ -10,12 +14,14 @@ const CaseStudyOptions = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate data fetching or API call for the case study by id
     const fetchCaseStudy = async () => {
       const caseStudies = [
         { id: "smart-investment"},
         { id: "tax-triumph"},
-        // ...other case studies
+        { id: "wealth-boost"},
+        { id: "green-growth"},
+        { id: "retirement-bliss"},
+        { id: "business-flourish"}
       ];
 
       const foundCaseStudy = caseStudies.find((study) => study.id === id);
@@ -36,6 +42,10 @@ const CaseStudyOptions = () => {
     <>
     {id === "smart-investment" && <SmartInvestment />}
     {id === "tax-triumph" && <TaxTriumph />}
+    {id === "wealth-boost" && <WealthBoost />}
+    {id === "green-growth" && <GreenGrowth />}
+    {id === "retirement-bliss" && <RetirementBliss />}
+    {id === "business-flourish" && <BusinessFlourish />}
     </>
   );
 };

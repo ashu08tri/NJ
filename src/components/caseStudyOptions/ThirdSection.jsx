@@ -74,7 +74,7 @@ function ThirdSection() {
                     </motion.div >
                 </div>}
 
-                <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                {id !== 'wealth-boost' && <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f43eed1ec5d4fc871a5_drahomir-hugo-posteby-mach-9Zb6mnHBH7E-unsplash.jpg"}
                         alt={"fifthSection_img3"} scrollNum={38} delay={1} height={'120%'} />
                     <motion.div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
@@ -93,12 +93,12 @@ function ThirdSection() {
                         <p className='text-xs uppercase'>Emily Thompson</p>
                         <p className='text-3xl'>Wealth Boost</p>
                         </div>
-                            <HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                        <Link to='/case_study/wealth-boost' className='w-full'><HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
-                </div>
+                </div>}
 
-                <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                {id !== 'green-growth' && <div className='relative w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515d3da912adf16a861c6df_cai-fang-MbxYb4a4AL0-unsplash.jpg"}
                         alt={"fifthSection_img1"} scrollNum={50} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
@@ -117,12 +117,12 @@ function ThirdSection() {
                         <p className='text-xs uppercase'>Evergreen Co.</p>
                         <p className='text-3xl'>Green Growth</p>
                         </div>
-                            <HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                        <Link to='/case_study/green-growth' className='w-full'><HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
-                </div>
+                </div>}
 
-                <div className='relative bg-[#1e1a33] w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                {id !== 'retirement-bliss' && <div className='relative bg-[#1e1a33] w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515b6ec44cf53a039adf638_juan-rojas-K7in_Hut_90-unsplash.jpg"}
                         alt={"fifthSection_img2"} scrollNum={52} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
@@ -141,12 +141,12 @@ function ThirdSection() {
                         <p className='text-xs uppercase'>Harmony Communities</p>
                         <p className='text-3xl'>Retirement Bliss</p>
                         </div>
-                            <HoverText text={'Retirement Bliss'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                         <Link to='/case_study/retirement-bliss' className='w-full'><HoverText text={'Retirement Bliss'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
-                </div>
+                </div>}
 
-                <div className='relative bg-[#1e1a33] w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
+                {id !== 'business-flourish' && <div className='relative bg-[#1e1a33] w-full h-[100%] md:h-[95%] overflow-hidden hover:shadow-black hover:-translate-y-2 transition-all duration-100'>
                     <ParallaxImage src={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c4f4ffd22cb82fa445996_cai-fang-k_0bcT6ycDk-unsplash.jpg"}
                         alt={"fifthSection_img3"} scrollNum={52} delay={1} height={'150%'} />
                     <div className='h-full absolute inset-0 bg-gradient-to-t from-purpleGradient to-purpleGradient mix-blend-multiply' />
@@ -165,10 +165,10 @@ function ThirdSection() {
                         <p className='text-xs uppercase'>Jhon&apos;s Catering Services</p>
                         <p className='text-3xl'>Business Flourish</p>
                         </div>
-                            <HoverText text={'Business Flourish'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                        <Link to='/case_study/business-flourish' className='w-full'><HoverText text={'Business Flourish'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
-                </div>
+                </div>}
 
             </div>
         </div>

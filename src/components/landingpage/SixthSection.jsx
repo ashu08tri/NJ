@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import ParallaxImage from '../animations/ParallaxImage';
 import SlideReveal from '../animations/SlideReveal';
 import HoverText from '../animations/HoverText';
@@ -34,7 +35,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Smart Investments</motion.p>
-                            <HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
+                            <Link to='/case_study/smart-investment' className='w-full flex justify-center'><HoverText text={'Smart Investments'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -57,7 +58,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Tax Triumph</motion.p>
-                            <HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
+                             <Link to='/case_study/tax-triumph' className='w-full flex justify-center'><HoverText text={'Tax Triumph'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -80,7 +81,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Wealth Boost</motion.p>
-                            <HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'}/>
+                            <Link to='/case_study/wealth-boost' className='w-full flex justify-center'><HoverText text={'Wealth Boost'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -103,7 +104,7 @@ function SixthSection() {
                         <div className='flex flex-col items-center justify-between h-full pb-10'>
                             <motion.p initial={{scale: 0}} variants={{textHover: {scale: 1}}} transition={{duration: .5}}
                              className='text-3xl'>Green Growth</motion.p>
-                            <HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} />
+                            <Link to='/case_study/green-growth' className='w-full flex justify-center'><HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
