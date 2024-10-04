@@ -23,6 +23,7 @@ export default {
         'brown15Text': 'rgb(153, 92, 86)',
         'purpleBlur': 'rgba(38, 33, 64, .5)',
         'purpleNoBlur': 'rgba(38, 33, 64, .7)',
+        'purpleBlurLight': 'rgba(54, 47, 90, .2)',
         'purpleBlurDark': 'rgba(54, 47, 90, .7)',
         'purpleNoBlurDark': 'rgba(54, 47, 90, .9)',
         'solutionsGradientTop': 'rgba(25, 21, 48, 0.3)',
