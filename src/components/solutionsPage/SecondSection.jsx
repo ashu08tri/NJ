@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import HoverText from '../animations/HoverText';
 import { FaArrowRight } from "react-icons/fa6";
@@ -8,37 +9,43 @@ const data = [
         sNo: 1,
         title: 'Wealth Management',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65118546ea066f424888e31a_pexels-tima-miroshnichenko-5717069-p-500.jpg',
-        desc: 'Maximize your wealth through personalized asset & estate planning.'
+        desc: 'Maximize your wealth through personalized asset & estate planning.',
+        link: 'wealth-management'
     },
     {
         sNo: 2,
         title: 'Investment Advisory',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651191e2be015f37785da01d_pexels-pavel-danilyuk-8112164-p-800.jpg',
-        desc: 'Strategic investment advice to help you reach financial success.'
+        desc: 'Strategic investment advice to help you reach financial success.',
+        link: 'investment-advisory'
     },
     {
         sNo: 3,
         title: 'Retirement Planning',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65119201066cbcc2b9789a2d_pexels-sora-shimazaki-5668856-p-500.jpg',
-        desc: 'Secure your future with custom retirement income strategies.'
+        desc: 'Secure your future with custom retirement income strategies.',
+        link: 'retirement-planning'
     },
     {
         sNo: 4,
         title: 'Tax Optimization',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65119222f421c66b366f44bb_pexels-tima-miroshnichenko-5717271-p-1080.jpg',
-        desc: 'Save more with strategic tax planning and complete compliance.'
+        desc: 'Save more with strategic tax planning and complete compliance.',
+        link: 'tax-optimization'
     },
     {
         sNo: 5,
         title: 'Sustainable Investing',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651ec8c2912d191888a871a2_ethan-rougon-oIlix2slmsI-unsplash-p-800.jpg',
-        desc: 'Invest responsibly with ESG portfolios and impact measurement.'
+        desc: 'Invest responsibly with ESG portfolios and impact measurement.',
+        link: 'sustainable-investing'
     },
     {
         sNo: 6,
         title: 'Financial Education',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6511925718ee4e723e4f13d3_pexels-tima-miroshnichenko-5717313-p-1080.jpg',
-        desc: 'Empower your financial decisions through workshops and webinars.'
+        desc: 'Empower your financial decisions through workshops and webinars.',
+        link: 'financial-education'
     }
 ];
 
@@ -176,7 +183,7 @@ function SecondSection() {
                                     }}
                                     className='text-2xl md:text-3xl text-brown15Text font-medium w-full md:w-1/2 underline-offset-4 py-2 md:py-0'
                                 >
-                                    <span className='textRef'>{item.title}</span>
+                                    <Link to={`/solutions/${item.link}`} className='textRef'>{item.title}</Link>
                                     <motion.span
                                         initial={{ width: 0 }}
                                         variants={{
@@ -218,7 +225,7 @@ function SecondSection() {
                                     }}
                                     className='w-64 md:w-72 text-brown15Text py-4 md:py-0 self-start md:self-auto'
                                 >
-                                    <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} />
+                                   <Link to={`/solutions/${item.link}`} className='w-full'><HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} /></Link>
                                 </motion.li>
 
                                 <motion.li

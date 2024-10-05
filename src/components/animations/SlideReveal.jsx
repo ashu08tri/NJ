@@ -10,7 +10,7 @@ function SlideReveal({bgColor}) {
     <motion.div
       ref={ref} // Attach the ref to the div
       initial={{ x: 0 }} 
-      animate={{ x: isInView ? ['-100%', '0%', '100%'] : '-100%' }} 
+      animate={{ x: isInView ? ['-100%', '0%', '101%'] : '-100%' }} 
       transition={{ duration: 2, ease: [0.2, 1, 0.2, 1] }} 
       className='absolute inset-0 z-40'
       style={{backgroundColor: bgColor}}

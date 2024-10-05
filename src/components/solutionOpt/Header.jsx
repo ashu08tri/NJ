@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import styles from '../landingpage/header.module.css';
 import { FaArrowDown } from "react-icons/fa6";
 
@@ -51,11 +52,11 @@ function Header({iconImg, image, title, desc}) {
           </div>
 
           {/* Content */}
-          <div className='flex flex-col p-2 justify-between gap-2 items-center bg-purpleBlurLight w-full'>
+          <div className='flex flex-col p-2 justify-between gap-2 items-center bg-purpleBlurLight w-full '>
             
-         <div className='flex justify-between items-center h-16'>
+         <div className='flex justify-between items-center h-16 group z-50 hover:bg-brown9HoverBox p-1'>
          <div className='flex items-center justify-between w-full px-3 md:px-0'>
-          <p className='px-6 md:px-12 py-2 md:py-6 font-semibold text-brown9 uppercase'>All Solutions</p>
+          <Link to='/solutions' className='px-6 md:px-12 py-2 md:py-6 font-semibold text-brown9 uppercase group-hover:text-black'>All Solutions</Link>
           </div>
           <img className='w-36 md:w-48 border border-l-0 border-[#5c5099] h-16 object-cover' src="https://cdn.prod.website-files.com/650c51b8e8548a72ca6aba04/6515539e0c97c2d8cd3e809e_pexels-gustavo-fring-4173267-p-500.webp" loading='lazy' alt="all_solutions" />
          </div>
