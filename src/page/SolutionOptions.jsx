@@ -1,6 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import WealthManagement from '../components/solutionOpt/wealthManagement/WealthManagement';
+import InvestmentAdvisory from "../components/solutionOpt/investmentAdvisory/InvestmentAdvisory";
+import RetirementPlanning from "../components/solutionOpt/retirementPlanning/RetirementPlanning";
+import TaxOptimization from "../components/solutionOpt/taxOptimization/TaxOptimization";
+import SustainableInvesting from "../components/solutionOpt/sustainableInvesting/SustainableInvesting";
+import FinancialEducation from "../components/solutionOpt/financialEducation/FinancialEducation";
 import ErrorPage from "./ErrorPage";
 
 function SolutionOptions() {
@@ -11,12 +16,12 @@ function SolutionOptions() {
     useEffect(() => {
         const fetchSolutions = async () => {
           const solutions = [
-            { id: "smart-investment"},
-            { id: "tax-triumph"},
+            { id: "investment-advisory"},
+            { id: "retirement-planning"},
             { id: "wealth-management"},
-            { id: "green-growth"},
-            { id: "retirement-bliss"},
-            { id: "business-flourish"}
+            { id: "tax-optimization"},
+            { id: "sustainable-investing"},
+            { id: "financial-education"}
           ];
     
           const foundSolutions = solutions.find((solution) => solution.id === id);
@@ -36,6 +41,11 @@ function SolutionOptions() {
   return (
     <>
     {id === 'wealth-management' && <WealthManagement />}
+    {id === 'investment-advisory' && <InvestmentAdvisory />}
+    {id === 'retirement-planning' && <RetirementPlanning />}
+    {id === 'tax-optimization' && <TaxOptimization />}
+    {id === 'sustainable-investing' && <SustainableInvesting />}
+    {id === 'financial-education' && <FinancialEducation />}
     </>
   )
 }

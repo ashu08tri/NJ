@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import HoverText from '../animations/HoverText';
 import { FaArrowRight } from "react-icons/fa6";
@@ -8,25 +9,30 @@ const data = [
         sNo: 1,
         title: 'Wealth Management',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65118546ea066f424888e31a_pexels-tima-miroshnichenko-5717069-p-500.jpg',
-        desc: 'Maximize your wealth through personalized asset & estate planning.'
+        desc: 'Maximize your wealth through personalized asset & estate planning.',
+        url: 'wealth-management'
     },
     {
         sNo: 2,
         title: 'Investment Advisory',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651191e2be015f37785da01d_pexels-pavel-danilyuk-8112164-p-800.jpg',
-        desc: 'Strategic investment advice to help you reach financial success.'
+        desc: 'Strategic investment advice to help you reach financial success.',
+        url: 'investment-advisory'
     },
     {
         sNo: 3,
         title: 'Retirement Planning',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65119201066cbcc2b9789a2d_pexels-sora-shimazaki-5668856-p-500.jpg',
-        desc: 'Secure your future with custom retirement income strategies.'
+        desc: 'Secure your future with custom retirement income strategies.',
+        url: 'retirement-planning'
+        
     },
     {
         sNo: 4,
         title: 'Tax Optimization',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65119222f421c66b366f44bb_pexels-tima-miroshnichenko-5717271-p-1080.jpg',
-        desc: 'Save more with strategic tax planning and complete compliance.'
+        desc: 'Save more with strategic tax planning and complete compliance.',
+        url: 'tax-optimization'
     },
 ];
 
@@ -164,7 +170,7 @@ function SeventhSection() {
                                     }}
                                     className='text-2xl md:text-3xl text-brown15Text font-medium w-full md:w-1/2 underline-offset-4 py-2 md:py-0'
                                 >
-                                    <span className='textRef'>{item.title}</span>
+                                    <Link to={`/solutions/${item.url}`} className='textRef'>{item.title}</Link>
                                     <motion.span
                                         initial={{ width: 0 }}
                                         variants={{
@@ -206,7 +212,7 @@ function SeventhSection() {
                                     }}
                                     className='w-64 md:w-72 text-brown15Text py-4 md:py-0 self-start md:self-auto'
                                 >
-                                    <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} />
+                                    <Link to={`/solutions/${item.url}`} className='w-full'><HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} /></Link>
                                 </motion.li>
 
                                 <motion.li
@@ -230,9 +236,9 @@ function SeventhSection() {
             </div>
             <div className='h-72 flex flex-col gap-12 justify-center items-center mt-20'>
                 <p className='text-5xl font-medium text-[#352d5e] text-center'>Need Financial Growth?</p>
-                <a href='/' className='w-80 text-brown15Text'>
+                <Link to='/solutions' className='w-80 text-brown15Text'>
                     <HoverText text={'Solutions'} mainBG={'rgba(0,0,0,0)'} overlayBG={'rgba(230, 148, 140, .2)'} borderColor={'black'} />
-                </a>
+                </Link>
             </div>
         </div>
     );

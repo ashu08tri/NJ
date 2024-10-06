@@ -15,7 +15,7 @@ function WealthManagement() {
     <ThirdSection />
     <FourthSection />
     <FifthSection />
-    <SixthSection image={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651191e2be015f37785da01d_pexels-pavel-danilyuk-8112164.jpg"}/>
+    <SixthSection image={"https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65118546ea066f424888e31a_pexels-tima-miroshnichenko-5717069.jpg"}/>
     <SeventhSection />
     </>
   )
