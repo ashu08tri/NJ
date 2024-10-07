@@ -114,7 +114,7 @@ function SecondSection() {
                         <p className='text-xs uppercase'>Evergreen Co.</p>
                         <p className='text-3xl'>Green Growth</p>
                         </div>
-                            <Link to='green-growth'><HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
+                            <Link to='green-growth' className='w-full'><HoverText text={'Green Growth'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
@@ -162,7 +162,7 @@ function SecondSection() {
                         <p className='text-xs uppercase'>Jhon&apos;s Catering Services</p>
                         <p className='text-3xl'>Business Flourish</p>
                         </div>
-                            <Link to='business-flourish'><HoverText text={'Business Flourish'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
+                            <Link to='business-flourish' className='w-full'><HoverText text={'Business Flourish'} overlayBG={'#4c2e2b'} mainBG={'rgba(204, 123, 114, 0.5)'} borderColor={'rgba(230, 148, 140, .5)'} /></Link>
                         </div>
                     </motion.div >
                 </div>
