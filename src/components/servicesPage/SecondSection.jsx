@@ -64,15 +64,13 @@ function SecondSection() {
                         const ref = useRef(null);
                         const inView = useInView(ref, { once: true });
                         return (
-                            <Link to={`/services/${item.url}`} key={i}
-                            ref={ref} className='block'>
-                            <motion.ul 
+                            <motion.ul key={i}
                                 initial="initial"
-                                 
+                                ref={ref}
                                 whileHover="hover"
                                 className='flex flex-col h-auto md:flex-row relative md:justify-between md:hover:py-12 transition-all duration-150 ease-linear md:items-center cursor-pointer py-10 border-b border-[#995c56] first:border-t-2 last:border-0'>
 
-                                <div className='w-full md:w-7/12 flex flex-col md:flex-row justify-start md:items-center md:gap-20'>
+                                <Link to={`/services/${item.url}`} className='w-full md:w-7/12 flex flex-col md:flex-row justify-start md:items-center md:gap-20'>
 
                                     <div className='flex justify-between gap-10 items-center md:w-1/2 px-2'>
                                     <li>0{item.sNo}.</li>
@@ -104,7 +102,7 @@ function SecondSection() {
                                             className='absolute bottom-0 h-[2px] bg-[#995c56] hidden md:block'
                                         />
                                     </motion.li>
-                                </div>
+                                </Link>
                                 <motion.div
                                 initial={{opacity: 0, x: -70}}
                                 animate= {{opacity: inView ? 1 : 0, x: inView ? 0 : -70, transition: {duration: .5, ease: 'linear'}}}
@@ -129,7 +127,7 @@ function SecondSection() {
                                 </motion.div>
 
                             </motion.ul>
-                            </Link>
+                            
                         )
                     }
                     )
