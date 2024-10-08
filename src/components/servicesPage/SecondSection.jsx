@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import SlideReveal from '../animations/SlideReveal';
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -8,37 +9,43 @@ const data = [
         sNo: 1,
         title: 'Assest Allocation',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515533d9608969bf906f399_pexels-sora-shimazaki-5669614.jpg',
-        desc: 'Strategic assests distribution for balanced growth'
+        desc: 'Strategic assests distribution for balanced growth',
+        url: 'assest-allocation'
     },
     {
         sNo: 2,
         title: 'Estate Planning',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/652565ed5dfb036da3e9efb9_matthew-henry-VviFtDJakYk-unsplash.jpg',
-        desc: 'Safegaurd your legacy throught expert estate planning'
+        desc: 'Safegaurd your legacy throught expert estate planning',
+        url: 'estate-planning'
     },
     {
         sNo: 3,
         title: 'Risk Assessment',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651fdc82e7b34681ca7c3067_pexels-karolina-grabowska-4386374.jpg',
-        desc: 'Quantify and manage financial risks effectively'
+        desc: 'Quantify and manage financial risks effectively',
+        url: 'risk-assessment'
     },
     {
         sNo: 4,
         title: 'Portfolio Optimization',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c0630b17bd62222f63be6_clay-banks-JPhVGeY4H7I-unsplash.jpg',
-        desc: 'Maximize returns through portfolio optimization'
+        desc: 'Maximize returns through portfolio optimization',
+        url: 'portfolio-optimization'
     },
     {
         sNo: 5,
         title: 'Income Planning',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65154e35eaecbad0896ec1a5_pexels-gustavo-fring-4173258.jpg',
-        desc: 'Strategic planning for stable income flow'
+        desc: 'Strategic planning for stable income flow',
+        url: 'income-planning'
     },
     {
         sNo: 6,
         title: 'Tax-Efficient Drawdowns',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65154e3d3e5c3dc909470d50_pexels-gustavo-fring-3873856.jpg',
-        desc: 'Optimize withdrawals with taz-efficient strategies'
+        desc: 'Optimize withdrawals with taz-efficient strategies',
+        url: 'tax-efficient-drawdowns'
     },
 
 ]
@@ -57,8 +64,9 @@ function SecondSection() {
                         const ref = useRef(null);
                         const inView = useInView(ref, { once: true });
                         return (
-                            <motion.ul key={i}
-                                ref={ref}
+                            <Link to={`/services/${item.url}`} key={i}
+                            ref={ref} className='block'>
+                            <motion.ul 
                                 initial="initial"
                                  
                                 whileHover="hover"
@@ -121,6 +129,7 @@ function SecondSection() {
                                 </motion.div>
 
                             </motion.ul>
+                            </Link>
                         )
                     }
                     )
