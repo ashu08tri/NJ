@@ -1,7 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa6";
 
 function SearchModal({ onClose }) {
     const controls = useAnimation();
@@ -59,9 +57,9 @@ function SearchModal({ onClose }) {
                     X
                 </button>
 
-                <div className="w-full p-10 md:p-16 flex flex-col gap-8 justify-center items-center text-[#f8b3ac]">
-                    <p className="text-6xl md:text-8xl">Search <span className="opacity-70">the site</span></p>
-                    <div className="w-1/2 border p-1 flex items-center"> {/* Flex container */}
+                <div className="w-full md:p-16 flex flex-col gap-8 justify-center items-center text-[#f8b3ac]">
+                    <p className="text-4xl md:text-8xl">Search <span className="opacity-70">the site</span></p>
+                    <div className="md:w-1/2 border p-1 flex items-center"> {/* Flex container */}
                         <input
                             type="text"
                             className="px-4 py-5 border border-brown15Text bg-transparent focus:border-blue-400 text-left w-full placeholder:text-[#f8b3ac]" placeholder="Enter what you are looking for..."
@@ -71,8 +69,6 @@ function SearchModal({ onClose }) {
                 </div>
             </motion.div>
         </motion.div>
-
-
     );
 }
 
