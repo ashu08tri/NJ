@@ -6,6 +6,10 @@ import RiskAssessment from "../components/serviceOpt/riskAssessment/RiskAssessme
 import PortfolioOpt from "../components/serviceOpt/portfolio/PortfolioOpt";
 import IncomePlanning from "../components/serviceOpt/incomePlanning/IncomePlanning";
 import TaxEfficient from "../components/serviceOpt/taxEfficientDrawdowns/TaxEfficient";
+import TaxStrategy from "../components/serviceOpt/taxStrategy/TaxStrategy";
+import TaxCompliance from "../components/serviceOpt/taxCompliance/TaxCompliance";
+import PersonalFinance from "../components/serviceOpt/personalFinance/PersonalFinance";
+import InvestmentWebinar from "../components/serviceOpt/investmentWebinar/InvestmentWebinar";
 import ErrorPage from "./ErrorPage";
 
 function ServiceOpt() {
@@ -22,7 +26,11 @@ function ServiceOpt() {
             { id: "risk-assessment"},
             { id: "portfolio-optimization"},
             { id: "income-planning"},
-            { id: "tax-efficient-drawdowns"}
+            { id: "tax-efficient-drawdowns"},
+            { id: "tax-strategy-consultation"},
+            { id: "tax-compliance"},
+            { id: "personal-finance-workshops"},
+            { id: "investment-webinars"}
           ];
     
           const foundServices = services.find((service) => service.id === id);
@@ -47,6 +55,10 @@ function ServiceOpt() {
     {id === 'portfolio-optimization' && <PortfolioOpt />}
     {id === 'income-planning' && <IncomePlanning />}
     {id === 'tax-efficient-drawdowns' && <TaxEfficient />}
+    {id === 'tax-strategy-consultation' && <TaxStrategy />}
+    {id === 'tax-compliance' && <TaxCompliance />}
+    {id === 'personal-finance-workshops' && <PersonalFinance />}
+    {id === 'investment-webinars' && <InvestmentWebinar />}
     </>
   )
 }

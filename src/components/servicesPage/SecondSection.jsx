@@ -6,48 +6,75 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const data = [
     {
-        sNo: 1,
+        sNo: '01',
         title: 'Assest Allocation',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/6515533d9608969bf906f399_pexels-sora-shimazaki-5669614.jpg',
         desc: 'Strategic assests distribution for balanced growth',
         url: 'assest-allocation'
     },
     {
-        sNo: 2,
+        sNo: '02',
         title: 'Estate Planning',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/652565ed5dfb036da3e9efb9_matthew-henry-VviFtDJakYk-unsplash.jpg',
         desc: 'Safegaurd your legacy throught expert estate planning',
         url: 'estate-planning'
     },
     {
-        sNo: 3,
+        sNo: '03',
         title: 'Risk Assessment',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651fdc82e7b34681ca7c3067_pexels-karolina-grabowska-4386374.jpg',
         desc: 'Quantify and manage financial risks effectively',
         url: 'risk-assessment'
     },
     {
-        sNo: 4,
+        sNo: '04',
         title: 'Portfolio Optimization',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651c0630b17bd62222f63be6_clay-banks-JPhVGeY4H7I-unsplash.jpg',
         desc: 'Maximize returns through portfolio optimization',
         url: 'portfolio-optimization'
     },
     {
-        sNo: 5,
+        sNo: '05',
         title: 'Income Planning',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65154e35eaecbad0896ec1a5_pexels-gustavo-fring-4173258.jpg',
         desc: 'Strategic planning for stable income flow',
         url: 'income-planning'
     },
     {
-        sNo: 6,
+        sNo: '06',
         title: 'Tax-Efficient Drawdowns',
         img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65154e3d3e5c3dc909470d50_pexels-gustavo-fring-3873856.jpg',
         desc: 'Optimize withdrawals with taz-efficient strategies',
         url: 'tax-efficient-drawdowns'
     },
-
+    {
+        sNo: '07',
+        title: 'Tax Strategy Consultation',
+        img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65154e435996ffa377d17a61_pexels-gustavo-fring-3873864.jpg',
+        desc: 'Strategize and plan for optimum tax benefits',
+        url: 'tax-strategy-consultation'
+    },
+    {
+        sNo: '08',
+        title: 'Tax Compliance',
+        img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651553647efa0aa6d084dfad_m-W7wEqy01K3s-unsplash.jpg',
+        desc: 'Navigate tax regulations with ease compliance',
+        url: 'tax-compliance'
+    },
+    {
+        sNo: '09',
+        title: 'Personal Finance Workshops',
+        img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/651191e2be015f37785da01d_pexels-pavel-danilyuk-8112164.jpg',
+        desc: 'Master personal finance through hands-on workshops',
+        url: 'personal-finance-workshops'
+    },
+    {
+        sNo: '10',
+        title: 'Investment Webinars',
+        img: 'https://cdn.prod.website-files.com/650c51b8e8548a72ca6ab9d9/65154e8b63d1be2ad5d69404_pexels-andrea-piacquadio-3860805.jpg',
+        desc: 'Stay updated with insightful investment webinars',
+        url: 'investment-webinars'
+    }
 ]
 
 function SecondSection() {
@@ -73,7 +100,7 @@ function SecondSection() {
                                 <Link to={`/services/${item.url}`} className='w-full md:w-7/12 flex flex-col md:flex-row justify-start md:items-center md:gap-20'>
 
                                     <div className='flex justify-between gap-10 items-center md:w-1/2 px-2'>
-                                    <li>0{item.sNo}.</li>
+                                    <li>{item.sNo}.</li>
                                     <li className='bg-[#f5e7e6] relative h-28 w-80 md:w-48 overflow-hidden'>
                                         <SlideReveal bgColor={"#262140"} />
                                         <motion.img
